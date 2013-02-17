@@ -6,6 +6,7 @@
 <script type="text/javascript" src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
 
 <script src="phonegap.js"></script>
+<script src="js/Camera.js"></script>
 
 <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.core.min.js"></script>
 <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.calbox.min.js"></script>
@@ -31,40 +32,14 @@
             
             
             
+            
         </style>
         <!-- User-generated js -->
         <script>
-        
-            
-            
-            function launchCamera(){
-                alert("camera");
-                navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
-                                            destinationType: destinationType.DATA_URL });
-            }
-            
-            function onPhotoURISuccess(imageURI) {
-                // Uncomment to view the image file URI
-                // console.log(imageURI);
-                
-                // Get image handle
-                //
-                var largeImage = document.getElementById('largeImage');
-                
-                // Unhide image elements
-                //
-                largeImage.style.display = 'block';
-                
-                // Show the captured photo
-                // The inline CSS rules are used to resize the image
-                //
-                largeImage.src = imageURI;
-            }
-            
+                    
             try {
 
     $(function() {
-
     });
 
   } catch (error) {
@@ -101,7 +76,7 @@
         <div data-role="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="javascript:launchCamera();">Camera</a></li>
+                <li><a href="javascript:capturePhoto();">Camera</a></li>
                 <li><a href="diary.html">Diary</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>

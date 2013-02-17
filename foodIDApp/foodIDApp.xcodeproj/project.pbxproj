@@ -1,0 +1,1028 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		FF74CFB816D0459A00BAC164 /* about.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = about.html; path = ../about.html; sourceTree = "<group>"; };
+		FF74CFB916D0459A00BAC164 /* app.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = app.html; path = ../app.html; sourceTree = "<group>"; };
+		FF74CFBA16D0459A00BAC164 /* calendar.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = calendar.html; path = ../calendar.html; sourceTree = "<group>"; };
+		FF74CFBB16D0459A00BAC164 /* calendar2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = calendar2.html; path = ../calendar2.html; sourceTree = "<group>"; };
+		FF74CFBF16D0459A00BAC164 /* animated-overlay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-overlay.gif"; sourceTree = "<group>"; };
+		FF74CFC016D0459A00BAC164 /* ui-bg_flat_0_aaaaaa_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_0_aaaaaa_40x100.png"; sourceTree = "<group>"; };
+		FF74CFC116D0459A00BAC164 /* ui-bg_flat_0_eeeeee_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_0_eeeeee_40x100.png"; sourceTree = "<group>"; };
+		FF74CFC216D0459A00BAC164 /* ui-bg_flat_55_c0402a_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_55_c0402a_40x100.png"; sourceTree = "<group>"; };
+		FF74CFC316D0459A00BAC164 /* ui-bg_flat_55_eeeeee_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_55_eeeeee_40x100.png"; sourceTree = "<group>"; };
+		FF74CFC416D0459A00BAC164 /* ui-bg_glass_100_f8f8f8_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_100_f8f8f8_1x400.png"; sourceTree = "<group>"; };
+		FF74CFC516D0459A00BAC164 /* ui-bg_glass_35_dddddd_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_35_dddddd_1x400.png"; sourceTree = "<group>"; };
+		FF74CFC616D0459A00BAC164 /* ui-bg_glass_60_eeeeee_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_60_eeeeee_1x400.png"; sourceTree = "<group>"; };
+		FF74CFC716D0459A00BAC164 /* ui-bg_inset-hard_75_999999_1x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_inset-hard_75_999999_1x100.png"; sourceTree = "<group>"; };
+		FF74CFC816D0459A00BAC164 /* ui-bg_inset-soft_50_c9c9c9_1x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_inset-soft_50_c9c9c9_1x100.png"; sourceTree = "<group>"; };
+		FF74CFC916D0459A00BAC164 /* ui-icons_3383bb_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_3383bb_256x240.png"; sourceTree = "<group>"; };
+		FF74CFCA16D0459A00BAC164 /* ui-icons_454545_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_454545_256x240.png"; sourceTree = "<group>"; };
+		FF74CFCB16D0459A00BAC164 /* ui-icons_70b2e1_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_70b2e1_256x240.png"; sourceTree = "<group>"; };
+		FF74CFCC16D0459A00BAC164 /* ui-icons_999999_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_999999_256x240.png"; sourceTree = "<group>"; };
+		FF74CFCD16D0459A00BAC164 /* ui-icons_fbc856_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_fbc856_256x240.png"; sourceTree = "<group>"; };
+		FF74CFCE16D0459A00BAC164 /* jquery-ui-1.10.0.custom.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "jquery-ui-1.10.0.custom.css"; sourceTree = "<group>"; };
+		FF74CFCF16D0459A00BAC164 /* jquery-ui-1.10.0.custom.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "jquery-ui-1.10.0.custom.min.css"; sourceTree = "<group>"; };
+		FF74CFD116D0459A00BAC164 /* AUTHORS.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS.txt; sourceTree = "<group>"; };
+		FF74CFD416D0459A00BAC164 /* alt-field.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "alt-field.html"; sourceTree = "<group>"; };
+		FF74CFD516D0459A00BAC164 /* animation.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = animation.html; sourceTree = "<group>"; };
+		FF74CFD616D0459A00BAC164 /* buttonbar.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = buttonbar.html; sourceTree = "<group>"; };
+		FF74CFD716D0459A00BAC164 /* date-formats.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "date-formats.html"; sourceTree = "<group>"; };
+		FF74CFD816D0459A00BAC164 /* date-range.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "date-range.html"; sourceTree = "<group>"; };
+		FF74CFD916D0459A00BAC164 /* default.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = default.html; sourceTree = "<group>"; };
+		FF74CFDA16D0459A00BAC164 /* dropdown-month-year.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "dropdown-month-year.html"; sourceTree = "<group>"; };
+		FF74CFDB16D0459A00BAC164 /* icon-trigger.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "icon-trigger.html"; sourceTree = "<group>"; };
+		FF74CFDD16D0459A00BAC164 /* calendar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = calendar.gif; sourceTree = "<group>"; };
+		FF74CFDE16D0459A00BAC164 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		FF74CFDF16D0459A00BAC164 /* inline.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = inline.html; sourceTree = "<group>"; };
+		FF74CFE016D0459A00BAC164 /* localization.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = localization.html; sourceTree = "<group>"; };
+		FF74CFE116D0459A00BAC164 /* min-max.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "min-max.html"; sourceTree = "<group>"; };
+		FF74CFE216D0459A00BAC164 /* multiple-calendars.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "multiple-calendars.html"; sourceTree = "<group>"; };
+		FF74CFE316D0459A00BAC164 /* other-months.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "other-months.html"; sourceTree = "<group>"; };
+		FF74CFE416D0459A00BAC164 /* show-week.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "show-week.html"; sourceTree = "<group>"; };
+		FF74CFE516D0459A00BAC164 /* demos.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = demos.css; sourceTree = "<group>"; };
+		FF74CFE716D0459A00BAC164 /* calendar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = calendar.gif; sourceTree = "<group>"; };
+		FF74CFE816D0459A00BAC164 /* demo-config-on-tile.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "demo-config-on-tile.gif"; sourceTree = "<group>"; };
+		FF74CFE916D0459A00BAC164 /* demo-config-on.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "demo-config-on.gif"; sourceTree = "<group>"; };
+		FF74CFEA16D0459A00BAC164 /* demo-spindown-closed.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "demo-spindown-closed.gif"; sourceTree = "<group>"; };
+		FF74CFEB16D0459A00BAC164 /* demo-spindown-open.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "demo-spindown-open.gif"; sourceTree = "<group>"; };
+		FF74CFEC16D0459A00BAC164 /* icon-docs-info.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "icon-docs-info.gif"; sourceTree = "<group>"; };
+		FF74CFED16D0459A00BAC164 /* pbar-ani.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "pbar-ani.gif"; sourceTree = "<group>"; };
+		FF74CFEF16D0459A00BAC164 /* datepicker.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = datepicker.html; sourceTree = "<group>"; };
+		FF74CFF116D0459A00BAC164 /* globalize.culture.de-DE.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "globalize.culture.de-DE.js"; sourceTree = "<group>"; };
+		FF74CFF216D0459A00BAC164 /* globalize.culture.ja-JP.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "globalize.culture.ja-JP.js"; sourceTree = "<group>"; };
+		FF74CFF316D0459A00BAC164 /* globalize.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = globalize.js; sourceTree = "<group>"; };
+		FF74CFF416D0459A00BAC164 /* jquery.mousewheel.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.mousewheel.js; sourceTree = "<group>"; };
+		FF74CFF516D0459A00BAC164 /* jshint.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jshint.js; sourceTree = "<group>"; };
+		FF74CFF616D0459A00BAC164 /* qunit.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = qunit.css; sourceTree = "<group>"; };
+		FF74CFF716D0459A00BAC164 /* qunit.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = qunit.js; sourceTree = "<group>"; };
+		FF74CFF816D0459A00BAC164 /* grunt.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = grunt.js; sourceTree = "<group>"; };
+		FF74CFF916D0459A00BAC164 /* jquery-1.9.0.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery-1.9.0.js"; sourceTree = "<group>"; };
+		FF74CFFA16D0459A00BAC164 /* MIT-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MIT-LICENSE.txt"; sourceTree = "<group>"; };
+		FF74CFFB16D0459A00BAC164 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		FF74CFFC16D0459A00BAC164 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		FF74D00016D0459A00BAC164 /* animated-overlay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-overlay.gif"; sourceTree = "<group>"; };
+		FF74D00116D0459A00BAC164 /* ui-bg_flat_0_aaaaaa_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_0_aaaaaa_40x100.png"; sourceTree = "<group>"; };
+		FF74D00216D0459A00BAC164 /* ui-bg_flat_75_ffffff_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_75_ffffff_40x100.png"; sourceTree = "<group>"; };
+		FF74D00316D0459A00BAC164 /* ui-bg_glass_55_fbf9ee_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_55_fbf9ee_1x400.png"; sourceTree = "<group>"; };
+		FF74D00416D0459A00BAC164 /* ui-bg_glass_65_ffffff_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_65_ffffff_1x400.png"; sourceTree = "<group>"; };
+		FF74D00516D0459A00BAC164 /* ui-bg_glass_75_dadada_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_75_dadada_1x400.png"; sourceTree = "<group>"; };
+		FF74D00616D0459A00BAC164 /* ui-bg_glass_75_e6e6e6_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_75_e6e6e6_1x400.png"; sourceTree = "<group>"; };
+		FF74D00716D0459A00BAC164 /* ui-bg_glass_95_fef1ec_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_95_fef1ec_1x400.png"; sourceTree = "<group>"; };
+		FF74D00816D0459A00BAC164 /* ui-bg_highlight-soft_75_cccccc_1x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_highlight-soft_75_cccccc_1x100.png"; sourceTree = "<group>"; };
+		FF74D00916D0459A00BAC164 /* ui-icons_222222_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_222222_256x240.png"; sourceTree = "<group>"; };
+		FF74D00A16D0459A00BAC164 /* ui-icons_2e83ff_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_2e83ff_256x240.png"; sourceTree = "<group>"; };
+		FF74D00B16D0459A00BAC164 /* ui-icons_454545_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_454545_256x240.png"; sourceTree = "<group>"; };
+		FF74D00C16D0459A00BAC164 /* ui-icons_888888_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_888888_256x240.png"; sourceTree = "<group>"; };
+		FF74D00D16D0459A00BAC164 /* ui-icons_cd0a0a_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_cd0a0a_256x240.png"; sourceTree = "<group>"; };
+		FF74D00E16D0459A00BAC164 /* jquery-ui.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "jquery-ui.css"; sourceTree = "<group>"; };
+		FF74D00F16D0459A00BAC164 /* jquery.ui.all.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.all.css; sourceTree = "<group>"; };
+		FF74D01016D0459A00BAC164 /* jquery.ui.base.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.base.css; sourceTree = "<group>"; };
+		FF74D01116D0459A00BAC164 /* jquery.ui.core.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.core.css; sourceTree = "<group>"; };
+		FF74D01216D0459A00BAC164 /* jquery.ui.datepicker.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.datepicker.css; sourceTree = "<group>"; };
+		FF74D01316D0459A00BAC164 /* jquery.ui.theme.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.theme.css; sourceTree = "<group>"; };
+		FF74D01616D0459A00BAC164 /* animated-overlay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-overlay.gif"; sourceTree = "<group>"; };
+		FF74D01716D0459A00BAC164 /* ui-bg_flat_0_aaaaaa_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_0_aaaaaa_40x100.png"; sourceTree = "<group>"; };
+		FF74D01816D0459A00BAC164 /* ui-bg_flat_75_ffffff_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_75_ffffff_40x100.png"; sourceTree = "<group>"; };
+		FF74D01916D0459A00BAC164 /* ui-bg_glass_55_fbf9ee_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_55_fbf9ee_1x400.png"; sourceTree = "<group>"; };
+		FF74D01A16D0459A00BAC164 /* ui-bg_glass_65_ffffff_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_65_ffffff_1x400.png"; sourceTree = "<group>"; };
+		FF74D01B16D0459A00BAC164 /* ui-bg_glass_75_dadada_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_75_dadada_1x400.png"; sourceTree = "<group>"; };
+		FF74D01C16D0459A00BAC164 /* ui-bg_glass_75_e6e6e6_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_75_e6e6e6_1x400.png"; sourceTree = "<group>"; };
+		FF74D01D16D0459A00BAC164 /* ui-bg_glass_95_fef1ec_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_95_fef1ec_1x400.png"; sourceTree = "<group>"; };
+		FF74D01E16D0459A00BAC164 /* ui-bg_highlight-soft_75_cccccc_1x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_highlight-soft_75_cccccc_1x100.png"; sourceTree = "<group>"; };
+		FF74D01F16D0459A00BAC164 /* ui-icons_222222_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_222222_256x240.png"; sourceTree = "<group>"; };
+		FF74D02016D0459A00BAC164 /* ui-icons_2e83ff_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_2e83ff_256x240.png"; sourceTree = "<group>"; };
+		FF74D02116D0459A00BAC164 /* ui-icons_454545_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_454545_256x240.png"; sourceTree = "<group>"; };
+		FF74D02216D0459A00BAC164 /* ui-icons_888888_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_888888_256x240.png"; sourceTree = "<group>"; };
+		FF74D02316D0459A00BAC164 /* ui-icons_cd0a0a_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_cd0a0a_256x240.png"; sourceTree = "<group>"; };
+		FF74D02416D0459A00BAC164 /* jquery-ui.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "jquery-ui.min.css"; sourceTree = "<group>"; };
+		FF74D02516D0459A00BAC164 /* jquery.ui.core.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.core.min.css; sourceTree = "<group>"; };
+		FF74D02616D0459A00BAC164 /* jquery.ui.datepicker.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.datepicker.min.css; sourceTree = "<group>"; };
+		FF74D02716D0459A00BAC164 /* jquery.ui.theme.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.theme.min.css; sourceTree = "<group>"; };
+		FF74D02A16D0459A00BAC164 /* animated-overlay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-overlay.gif"; sourceTree = "<group>"; };
+		FF74D02B16D0459A00BAC164 /* ui-bg_flat_0_aaaaaa_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_0_aaaaaa_40x100.png"; sourceTree = "<group>"; };
+		FF74D02C16D0459A00BAC164 /* ui-bg_flat_0_eeeeee_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_0_eeeeee_40x100.png"; sourceTree = "<group>"; };
+		FF74D02D16D0459A00BAC164 /* ui-bg_flat_55_c0402a_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_55_c0402a_40x100.png"; sourceTree = "<group>"; };
+		FF74D02E16D0459A00BAC164 /* ui-bg_flat_55_eeeeee_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_55_eeeeee_40x100.png"; sourceTree = "<group>"; };
+		FF74D02F16D0459A00BAC164 /* ui-bg_glass_100_f8f8f8_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_100_f8f8f8_1x400.png"; sourceTree = "<group>"; };
+		FF74D03016D0459A00BAC164 /* ui-bg_glass_35_dddddd_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_35_dddddd_1x400.png"; sourceTree = "<group>"; };
+		FF74D03116D0459A00BAC164 /* ui-bg_glass_60_eeeeee_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_60_eeeeee_1x400.png"; sourceTree = "<group>"; };
+		FF74D03216D0459A00BAC164 /* ui-bg_inset-hard_75_999999_1x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_inset-hard_75_999999_1x100.png"; sourceTree = "<group>"; };
+		FF74D03316D0459A00BAC164 /* ui-bg_inset-soft_50_c9c9c9_1x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_inset-soft_50_c9c9c9_1x100.png"; sourceTree = "<group>"; };
+		FF74D03416D0459A00BAC164 /* ui-icons_3383bb_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_3383bb_256x240.png"; sourceTree = "<group>"; };
+		FF74D03516D0459A00BAC164 /* ui-icons_454545_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_454545_256x240.png"; sourceTree = "<group>"; };
+		FF74D03616D0459A00BAC164 /* ui-icons_70b2e1_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_70b2e1_256x240.png"; sourceTree = "<group>"; };
+		FF74D03716D0459A00BAC164 /* ui-icons_999999_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_999999_256x240.png"; sourceTree = "<group>"; };
+		FF74D03816D0459A00BAC164 /* ui-icons_fbc856_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_fbc856_256x240.png"; sourceTree = "<group>"; };
+		FF74D03916D0459A00BAC164 /* jquery-ui.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "jquery-ui.css"; sourceTree = "<group>"; };
+		FF74D03A16D0459A00BAC164 /* jquery.ui.all.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.all.css; sourceTree = "<group>"; };
+		FF74D03B16D0459A00BAC164 /* jquery.ui.base.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.base.css; sourceTree = "<group>"; };
+		FF74D03C16D0459A00BAC164 /* jquery.ui.core.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.core.css; sourceTree = "<group>"; };
+		FF74D03D16D0459A00BAC164 /* jquery.ui.datepicker.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.datepicker.css; sourceTree = "<group>"; };
+		FF74D03E16D0459A00BAC164 /* jquery.ui.theme.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.theme.css; sourceTree = "<group>"; };
+		FF74D04116D0459A00BAC164 /* animated-overlay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-overlay.gif"; sourceTree = "<group>"; };
+		FF74D04216D0459A00BAC164 /* ui-bg_flat_0_aaaaaa_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_0_aaaaaa_40x100.png"; sourceTree = "<group>"; };
+		FF74D04316D0459A00BAC164 /* ui-bg_flat_0_eeeeee_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_0_eeeeee_40x100.png"; sourceTree = "<group>"; };
+		FF74D04416D0459A00BAC164 /* ui-bg_flat_55_c0402a_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_55_c0402a_40x100.png"; sourceTree = "<group>"; };
+		FF74D04516D0459A00BAC164 /* ui-bg_flat_55_eeeeee_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_55_eeeeee_40x100.png"; sourceTree = "<group>"; };
+		FF74D04616D0459A00BAC164 /* ui-bg_glass_100_f8f8f8_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_100_f8f8f8_1x400.png"; sourceTree = "<group>"; };
+		FF74D04716D0459A00BAC164 /* ui-bg_glass_35_dddddd_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_35_dddddd_1x400.png"; sourceTree = "<group>"; };
+		FF74D04816D0459A00BAC164 /* ui-bg_glass_60_eeeeee_1x400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_glass_60_eeeeee_1x400.png"; sourceTree = "<group>"; };
+		FF74D04916D0459A00BAC164 /* ui-bg_inset-hard_75_999999_1x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_inset-hard_75_999999_1x100.png"; sourceTree = "<group>"; };
+		FF74D04A16D0459A00BAC164 /* ui-bg_inset-soft_50_c9c9c9_1x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_inset-soft_50_c9c9c9_1x100.png"; sourceTree = "<group>"; };
+		FF74D04B16D0459A00BAC164 /* ui-icons_3383bb_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_3383bb_256x240.png"; sourceTree = "<group>"; };
+		FF74D04C16D0459A00BAC164 /* ui-icons_454545_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_454545_256x240.png"; sourceTree = "<group>"; };
+		FF74D04D16D0459A00BAC164 /* ui-icons_70b2e1_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_70b2e1_256x240.png"; sourceTree = "<group>"; };
+		FF74D04E16D0459A00BAC164 /* ui-icons_999999_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_999999_256x240.png"; sourceTree = "<group>"; };
+		FF74D04F16D0459A00BAC164 /* ui-icons_fbc856_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_fbc856_256x240.png"; sourceTree = "<group>"; };
+		FF74D05016D0459A00BAC164 /* jquery-ui.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "jquery-ui.min.css"; sourceTree = "<group>"; };
+		FF74D05116D0459A00BAC164 /* jquery.ui.core.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.core.min.css; sourceTree = "<group>"; };
+		FF74D05216D0459A00BAC164 /* jquery.ui.datepicker.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.datepicker.min.css; sourceTree = "<group>"; };
+		FF74D05316D0459A00BAC164 /* jquery.ui.theme.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.theme.min.css; sourceTree = "<group>"; };
+		FF74D05616D0459A00BAC164 /* jquery-ui-i18n.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery-ui-i18n.js"; sourceTree = "<group>"; };
+		FF74D05716D0459A00BAC164 /* jquery.ui.datepicker-af.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-af.js"; sourceTree = "<group>"; };
+		FF74D05816D0459A00BAC164 /* jquery.ui.datepicker-ar-DZ.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ar-DZ.js"; sourceTree = "<group>"; };
+		FF74D05916D0459A00BAC164 /* jquery.ui.datepicker-ar.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ar.js"; sourceTree = "<group>"; };
+		FF74D05A16D0459A00BAC164 /* jquery.ui.datepicker-az.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-az.js"; sourceTree = "<group>"; };
+		FF74D05B16D0459A00BAC164 /* jquery.ui.datepicker-be.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-be.js"; sourceTree = "<group>"; };
+		FF74D05C16D0459A00BAC164 /* jquery.ui.datepicker-bg.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-bg.js"; sourceTree = "<group>"; };
+		FF74D05D16D0459A00BAC164 /* jquery.ui.datepicker-bs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-bs.js"; sourceTree = "<group>"; };
+		FF74D05E16D0459A00BAC164 /* jquery.ui.datepicker-ca.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ca.js"; sourceTree = "<group>"; };
+		FF74D05F16D0459A00BAC164 /* jquery.ui.datepicker-cs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-cs.js"; sourceTree = "<group>"; };
+		FF74D06016D0459A00BAC164 /* jquery.ui.datepicker-cy-GB.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-cy-GB.js"; sourceTree = "<group>"; };
+		FF74D06116D0459A00BAC164 /* jquery.ui.datepicker-da.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-da.js"; sourceTree = "<group>"; };
+		FF74D06216D0459A00BAC164 /* jquery.ui.datepicker-de.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-de.js"; sourceTree = "<group>"; };
+		FF74D06316D0459A00BAC164 /* jquery.ui.datepicker-el.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-el.js"; sourceTree = "<group>"; };
+		FF74D06416D0459A00BAC164 /* jquery.ui.datepicker-en-AU.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-en-AU.js"; sourceTree = "<group>"; };
+		FF74D06516D0459A00BAC164 /* jquery.ui.datepicker-en-GB.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-en-GB.js"; sourceTree = "<group>"; };
+		FF74D06616D0459A00BAC164 /* jquery.ui.datepicker-en-NZ.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-en-NZ.js"; sourceTree = "<group>"; };
+		FF74D06716D0459A00BAC164 /* jquery.ui.datepicker-eo.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-eo.js"; sourceTree = "<group>"; };
+		FF74D06816D0459A00BAC164 /* jquery.ui.datepicker-es.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-es.js"; sourceTree = "<group>"; };
+		FF74D06916D0459A00BAC164 /* jquery.ui.datepicker-et.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-et.js"; sourceTree = "<group>"; };
+		FF74D06A16D0459A00BAC164 /* jquery.ui.datepicker-eu.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-eu.js"; sourceTree = "<group>"; };
+		FF74D06B16D0459A00BAC164 /* jquery.ui.datepicker-fa.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-fa.js"; sourceTree = "<group>"; };
+		FF74D06C16D0459A00BAC164 /* jquery.ui.datepicker-fi.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-fi.js"; sourceTree = "<group>"; };
+		FF74D06D16D0459A00BAC164 /* jquery.ui.datepicker-fo.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-fo.js"; sourceTree = "<group>"; };
+		FF74D06E16D0459A00BAC164 /* jquery.ui.datepicker-fr-CA.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-fr-CA.js"; sourceTree = "<group>"; };
+		FF74D06F16D0459A00BAC164 /* jquery.ui.datepicker-fr-CH.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-fr-CH.js"; sourceTree = "<group>"; };
+		FF74D07016D0459A00BAC164 /* jquery.ui.datepicker-fr.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-fr.js"; sourceTree = "<group>"; };
+		FF74D07116D0459A00BAC164 /* jquery.ui.datepicker-gl.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-gl.js"; sourceTree = "<group>"; };
+		FF74D07216D0459A00BAC164 /* jquery.ui.datepicker-he.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-he.js"; sourceTree = "<group>"; };
+		FF74D07316D0459A00BAC164 /* jquery.ui.datepicker-hi.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-hi.js"; sourceTree = "<group>"; };
+		FF74D07416D0459A00BAC164 /* jquery.ui.datepicker-hr.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-hr.js"; sourceTree = "<group>"; };
+		FF74D07516D0459A00BAC164 /* jquery.ui.datepicker-hu.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-hu.js"; sourceTree = "<group>"; };
+		FF74D07616D0459A00BAC164 /* jquery.ui.datepicker-hy.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-hy.js"; sourceTree = "<group>"; };
+		FF74D07716D0459A00BAC164 /* jquery.ui.datepicker-id.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-id.js"; sourceTree = "<group>"; };
+		FF74D07816D0459A00BAC164 /* jquery.ui.datepicker-is.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-is.js"; sourceTree = "<group>"; };
+		FF74D07916D0459A00BAC164 /* jquery.ui.datepicker-it.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-it.js"; sourceTree = "<group>"; };
+		FF74D07A16D0459A00BAC164 /* jquery.ui.datepicker-ja.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ja.js"; sourceTree = "<group>"; };
+		FF74D07B16D0459A00BAC164 /* jquery.ui.datepicker-ka.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ka.js"; sourceTree = "<group>"; };
+		FF74D07C16D0459A00BAC164 /* jquery.ui.datepicker-kk.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-kk.js"; sourceTree = "<group>"; };
+		FF74D07D16D0459A00BAC164 /* jquery.ui.datepicker-km.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-km.js"; sourceTree = "<group>"; };
+		FF74D07E16D0459A00BAC164 /* jquery.ui.datepicker-ko.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ko.js"; sourceTree = "<group>"; };
+		FF74D07F16D0459A00BAC164 /* jquery.ui.datepicker-ky.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ky.js"; sourceTree = "<group>"; };
+		FF74D08016D0459A00BAC164 /* jquery.ui.datepicker-lb.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-lb.js"; sourceTree = "<group>"; };
+		FF74D08116D0459A00BAC164 /* jquery.ui.datepicker-lt.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-lt.js"; sourceTree = "<group>"; };
+		FF74D08216D0459A00BAC164 /* jquery.ui.datepicker-lv.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-lv.js"; sourceTree = "<group>"; };
+		FF74D08316D0459A00BAC164 /* jquery.ui.datepicker-mk.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-mk.js"; sourceTree = "<group>"; };
+		FF74D08416D0459A00BAC164 /* jquery.ui.datepicker-ml.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ml.js"; sourceTree = "<group>"; };
+		FF74D08516D0459A00BAC164 /* jquery.ui.datepicker-ms.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ms.js"; sourceTree = "<group>"; };
+		FF74D08616D0459A00BAC164 /* jquery.ui.datepicker-nb.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-nb.js"; sourceTree = "<group>"; };
+		FF74D08716D0459A00BAC164 /* jquery.ui.datepicker-nl-BE.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-nl-BE.js"; sourceTree = "<group>"; };
+		FF74D08816D0459A00BAC164 /* jquery.ui.datepicker-nl.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-nl.js"; sourceTree = "<group>"; };
+		FF74D08916D0459A00BAC164 /* jquery.ui.datepicker-nn.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-nn.js"; sourceTree = "<group>"; };
+		FF74D08A16D0459A00BAC164 /* jquery.ui.datepicker-no.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-no.js"; sourceTree = "<group>"; };
+		FF74D08B16D0459A00BAC164 /* jquery.ui.datepicker-pl.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-pl.js"; sourceTree = "<group>"; };
+		FF74D08C16D0459A00BAC164 /* jquery.ui.datepicker-pt-BR.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-pt-BR.js"; sourceTree = "<group>"; };
+		FF74D08D16D0459A00BAC164 /* jquery.ui.datepicker-pt.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-pt.js"; sourceTree = "<group>"; };
+		FF74D08E16D0459A00BAC164 /* jquery.ui.datepicker-rm.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-rm.js"; sourceTree = "<group>"; };
+		FF74D08F16D0459A00BAC164 /* jquery.ui.datepicker-ro.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ro.js"; sourceTree = "<group>"; };
+		FF74D09016D0459A00BAC164 /* jquery.ui.datepicker-ru.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ru.js"; sourceTree = "<group>"; };
+		FF74D09116D0459A00BAC164 /* jquery.ui.datepicker-sk.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-sk.js"; sourceTree = "<group>"; };
+		FF74D09216D0459A00BAC164 /* jquery.ui.datepicker-sl.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-sl.js"; sourceTree = "<group>"; };
+		FF74D09316D0459A00BAC164 /* jquery.ui.datepicker-sq.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-sq.js"; sourceTree = "<group>"; };
+		FF74D09416D0459A00BAC164 /* jquery.ui.datepicker-sr-SR.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-sr-SR.js"; sourceTree = "<group>"; };
+		FF74D09516D0459A00BAC164 /* jquery.ui.datepicker-sr.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-sr.js"; sourceTree = "<group>"; };
+		FF74D09616D0459A00BAC164 /* jquery.ui.datepicker-sv.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-sv.js"; sourceTree = "<group>"; };
+		FF74D09716D0459A00BAC164 /* jquery.ui.datepicker-ta.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ta.js"; sourceTree = "<group>"; };
+		FF74D09816D0459A00BAC164 /* jquery.ui.datepicker-th.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-th.js"; sourceTree = "<group>"; };
+		FF74D09916D0459A00BAC164 /* jquery.ui.datepicker-tj.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-tj.js"; sourceTree = "<group>"; };
+		FF74D09A16D0459A00BAC164 /* jquery.ui.datepicker-tr.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-tr.js"; sourceTree = "<group>"; };
+		FF74D09B16D0459A00BAC164 /* jquery.ui.datepicker-uk.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-uk.js"; sourceTree = "<group>"; };
+		FF74D09C16D0459A00BAC164 /* jquery.ui.datepicker-vi.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-vi.js"; sourceTree = "<group>"; };
+		FF74D09D16D0459A00BAC164 /* jquery.ui.datepicker-zh-CN.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-zh-CN.js"; sourceTree = "<group>"; };
+		FF74D09E16D0459A00BAC164 /* jquery.ui.datepicker-zh-HK.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-zh-HK.js"; sourceTree = "<group>"; };
+		FF74D09F16D0459A00BAC164 /* jquery.ui.datepicker-zh-TW.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-zh-TW.js"; sourceTree = "<group>"; };
+		FF74D0A016D0459A00BAC164 /* jquery-ui.custom.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery-ui.custom.js"; sourceTree = "<group>"; };
+		FF74D0A116D0459A00BAC164 /* jquery.ui.core.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.ui.core.js; sourceTree = "<group>"; };
+		FF74D0A216D0459A00BAC164 /* jquery.ui.datepicker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.ui.datepicker.js; sourceTree = "<group>"; };
+		FF74D0A516D0459A00BAC164 /* jquery-ui-i18n.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery-ui-i18n.min.js"; sourceTree = "<group>"; };
+		FF74D0A616D0459A00BAC164 /* jquery.ui.datepicker-af.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-af.min.js"; sourceTree = "<group>"; };
+		FF74D0A716D0459A00BAC164 /* jquery.ui.datepicker-ar-DZ.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ar-DZ.min.js"; sourceTree = "<group>"; };
+		FF74D0A816D0459A00BAC164 /* jquery.ui.datepicker-ar.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ar.min.js"; sourceTree = "<group>"; };
+		FF74D0A916D0459A00BAC164 /* jquery.ui.datepicker-az.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-az.min.js"; sourceTree = "<group>"; };
+		FF74D0AA16D0459A00BAC164 /* jquery.ui.datepicker-be.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-be.min.js"; sourceTree = "<group>"; };
+		FF74D0AB16D0459A00BAC164 /* jquery.ui.datepicker-bg.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-bg.min.js"; sourceTree = "<group>"; };
+		FF74D0AC16D0459A00BAC164 /* jquery.ui.datepicker-bs.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-bs.min.js"; sourceTree = "<group>"; };
+		FF74D0AD16D0459A00BAC164 /* jquery.ui.datepicker-ca.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ca.min.js"; sourceTree = "<group>"; };
+		FF74D0AE16D0459A00BAC164 /* jquery.ui.datepicker-cs.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-cs.min.js"; sourceTree = "<group>"; };
+		FF74D0AF16D0459A00BAC164 /* jquery.ui.datepicker-cy-GB.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-cy-GB.min.js"; sourceTree = "<group>"; };
+		FF74D0B016D0459A00BAC164 /* jquery.ui.datepicker-da.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-da.min.js"; sourceTree = "<group>"; };
+		FF74D0B116D0459A00BAC164 /* jquery.ui.datepicker-de.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-de.min.js"; sourceTree = "<group>"; };
+		FF74D0B216D0459A00BAC164 /* jquery.ui.datepicker-el.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-el.min.js"; sourceTree = "<group>"; };
+		FF74D0B316D0459A00BAC164 /* jquery.ui.datepicker-en-AU.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-en-AU.min.js"; sourceTree = "<group>"; };
+		FF74D0B416D0459A00BAC164 /* jquery.ui.datepicker-en-GB.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-en-GB.min.js"; sourceTree = "<group>"; };
+		FF74D0B516D0459A00BAC164 /* jquery.ui.datepicker-en-NZ.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-en-NZ.min.js"; sourceTree = "<group>"; };
+		FF74D0B616D0459A00BAC164 /* jquery.ui.datepicker-eo.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-eo.min.js"; sourceTree = "<group>"; };
+		FF74D0B716D0459A00BAC164 /* jquery.ui.datepicker-es.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-es.min.js"; sourceTree = "<group>"; };
+		FF74D0B816D0459A00BAC164 /* jquery.ui.datepicker-et.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-et.min.js"; sourceTree = "<group>"; };
+		FF74D0B916D0459A00BAC164 /* jquery.ui.datepicker-eu.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-eu.min.js"; sourceTree = "<group>"; };
+		FF74D0BA16D0459A00BAC164 /* jquery.ui.datepicker-fa.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-fa.min.js"; sourceTree = "<group>"; };
+		FF74D0BB16D0459A00BAC164 /* jquery.ui.datepicker-fi.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-fi.min.js"; sourceTree = "<group>"; };
+		FF74D0BC16D0459A00BAC164 /* jquery.ui.datepicker-fo.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-fo.min.js"; sourceTree = "<group>"; };
+		FF74D0BD16D0459A00BAC164 /* jquery.ui.datepicker-fr-CA.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-fr-CA.min.js"; sourceTree = "<group>"; };
+		FF74D0BE16D0459A00BAC164 /* jquery.ui.datepicker-fr-CH.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-fr-CH.min.js"; sourceTree = "<group>"; };
+		FF74D0BF16D0459A00BAC164 /* jquery.ui.datepicker-fr.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-fr.min.js"; sourceTree = "<group>"; };
+		FF74D0C016D0459A00BAC164 /* jquery.ui.datepicker-gl.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-gl.min.js"; sourceTree = "<group>"; };
+		FF74D0C116D0459A00BAC164 /* jquery.ui.datepicker-he.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-he.min.js"; sourceTree = "<group>"; };
+		FF74D0C216D0459A00BAC164 /* jquery.ui.datepicker-hi.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-hi.min.js"; sourceTree = "<group>"; };
+		FF74D0C316D0459A00BAC164 /* jquery.ui.datepicker-hr.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-hr.min.js"; sourceTree = "<group>"; };
+		FF74D0C416D0459A00BAC164 /* jquery.ui.datepicker-hu.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-hu.min.js"; sourceTree = "<group>"; };
+		FF74D0C516D0459A00BAC164 /* jquery.ui.datepicker-hy.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-hy.min.js"; sourceTree = "<group>"; };
+		FF74D0C616D0459A00BAC164 /* jquery.ui.datepicker-id.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-id.min.js"; sourceTree = "<group>"; };
+		FF74D0C716D0459A00BAC164 /* jquery.ui.datepicker-is.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-is.min.js"; sourceTree = "<group>"; };
+		FF74D0C816D0459A00BAC164 /* jquery.ui.datepicker-it.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-it.min.js"; sourceTree = "<group>"; };
+		FF74D0C916D0459A00BAC164 /* jquery.ui.datepicker-ja.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ja.min.js"; sourceTree = "<group>"; };
+		FF74D0CA16D0459A00BAC164 /* jquery.ui.datepicker-ka.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ka.min.js"; sourceTree = "<group>"; };
+		FF74D0CB16D0459A00BAC164 /* jquery.ui.datepicker-kk.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-kk.min.js"; sourceTree = "<group>"; };
+		FF74D0CC16D0459A00BAC164 /* jquery.ui.datepicker-km.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-km.min.js"; sourceTree = "<group>"; };
+		FF74D0CD16D0459A00BAC164 /* jquery.ui.datepicker-ko.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ko.min.js"; sourceTree = "<group>"; };
+		FF74D0CE16D0459A00BAC164 /* jquery.ui.datepicker-ky.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ky.min.js"; sourceTree = "<group>"; };
+		FF74D0CF16D0459A00BAC164 /* jquery.ui.datepicker-lb.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-lb.min.js"; sourceTree = "<group>"; };
+		FF74D0D016D0459A00BAC164 /* jquery.ui.datepicker-lt.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-lt.min.js"; sourceTree = "<group>"; };
+		FF74D0D116D0459A00BAC164 /* jquery.ui.datepicker-lv.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-lv.min.js"; sourceTree = "<group>"; };
+		FF74D0D216D0459A00BAC164 /* jquery.ui.datepicker-mk.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-mk.min.js"; sourceTree = "<group>"; };
+		FF74D0D316D0459A00BAC164 /* jquery.ui.datepicker-ml.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ml.min.js"; sourceTree = "<group>"; };
+		FF74D0D416D0459A00BAC164 /* jquery.ui.datepicker-ms.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ms.min.js"; sourceTree = "<group>"; };
+		FF74D0D516D0459A00BAC164 /* jquery.ui.datepicker-nb.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-nb.min.js"; sourceTree = "<group>"; };
+		FF74D0D616D0459A00BAC164 /* jquery.ui.datepicker-nl-BE.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-nl-BE.min.js"; sourceTree = "<group>"; };
+		FF74D0D716D0459A00BAC164 /* jquery.ui.datepicker-nl.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-nl.min.js"; sourceTree = "<group>"; };
+		FF74D0D816D0459A00BAC164 /* jquery.ui.datepicker-nn.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-nn.min.js"; sourceTree = "<group>"; };
+		FF74D0D916D0459A00BAC164 /* jquery.ui.datepicker-no.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-no.min.js"; sourceTree = "<group>"; };
+		FF74D0DA16D0459A00BAC164 /* jquery.ui.datepicker-pl.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-pl.min.js"; sourceTree = "<group>"; };
+		FF74D0DB16D0459A00BAC164 /* jquery.ui.datepicker-pt-BR.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-pt-BR.min.js"; sourceTree = "<group>"; };
+		FF74D0DC16D0459A00BAC164 /* jquery.ui.datepicker-pt.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-pt.min.js"; sourceTree = "<group>"; };
+		FF74D0DD16D0459A00BAC164 /* jquery.ui.datepicker-rm.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-rm.min.js"; sourceTree = "<group>"; };
+		FF74D0DE16D0459A00BAC164 /* jquery.ui.datepicker-ro.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ro.min.js"; sourceTree = "<group>"; };
+		FF74D0DF16D0459A00BAC164 /* jquery.ui.datepicker-ru.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ru.min.js"; sourceTree = "<group>"; };
+		FF74D0E016D0459A00BAC164 /* jquery.ui.datepicker-sk.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-sk.min.js"; sourceTree = "<group>"; };
+		FF74D0E116D0459A00BAC164 /* jquery.ui.datepicker-sl.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-sl.min.js"; sourceTree = "<group>"; };
+		FF74D0E216D0459A00BAC164 /* jquery.ui.datepicker-sq.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-sq.min.js"; sourceTree = "<group>"; };
+		FF74D0E316D0459A00BAC164 /* jquery.ui.datepicker-sr-SR.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-sr-SR.min.js"; sourceTree = "<group>"; };
+		FF74D0E416D0459A00BAC164 /* jquery.ui.datepicker-sr.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-sr.min.js"; sourceTree = "<group>"; };
+		FF74D0E516D0459A00BAC164 /* jquery.ui.datepicker-sv.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-sv.min.js"; sourceTree = "<group>"; };
+		FF74D0E616D0459A00BAC164 /* jquery.ui.datepicker-ta.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-ta.min.js"; sourceTree = "<group>"; };
+		FF74D0E716D0459A00BAC164 /* jquery.ui.datepicker-th.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-th.min.js"; sourceTree = "<group>"; };
+		FF74D0E816D0459A00BAC164 /* jquery.ui.datepicker-tj.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-tj.min.js"; sourceTree = "<group>"; };
+		FF74D0E916D0459A00BAC164 /* jquery.ui.datepicker-tr.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-tr.min.js"; sourceTree = "<group>"; };
+		FF74D0EA16D0459A00BAC164 /* jquery.ui.datepicker-uk.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-uk.min.js"; sourceTree = "<group>"; };
+		FF74D0EB16D0459A00BAC164 /* jquery.ui.datepicker-vi.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-vi.min.js"; sourceTree = "<group>"; };
+		FF74D0EC16D0459A00BAC164 /* jquery.ui.datepicker-zh-CN.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-zh-CN.min.js"; sourceTree = "<group>"; };
+		FF74D0ED16D0459A00BAC164 /* jquery.ui.datepicker-zh-HK.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-zh-HK.min.js"; sourceTree = "<group>"; };
+		FF74D0EE16D0459A00BAC164 /* jquery.ui.datepicker-zh-TW.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery.ui.datepicker-zh-TW.min.js"; sourceTree = "<group>"; };
+		FF74D0EF16D0459A00BAC164 /* jquery-ui.custom.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery-ui.custom.min.js"; sourceTree = "<group>"; };
+		FF74D0F016D0459A00BAC164 /* jquery.ui.core.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.ui.core.min.js; sourceTree = "<group>"; };
+		FF74D0F116D0459A00BAC164 /* jquery.ui.datepicker.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.ui.datepicker.min.js; sourceTree = "<group>"; };
+		FF74D0F216D0459A00BAC164 /* ui.core.jquery.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ui.core.jquery.json; sourceTree = "<group>"; };
+		FF74D0F316D0459A00BAC164 /* ui.datepicker.jquery.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ui.datepicker.jquery.json; sourceTree = "<group>"; };
+		FF74D0F416D0459A00BAC164 /* foodApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foodApp.png; path = ../foodApp.png; sourceTree = "<group>"; };
+		FF74D0F616D0459A00BAC164 /* foodIDApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = foodIDApp.xcodeproj; sourceTree = "<group>"; };
+		FF74D0F916D0459A00BAC164 /* icon-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-green.png"; path = "../icon-green.png"; sourceTree = "<group>"; };
+		FF74D0FA16D0459A00BAC164 /* icon-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-red.png"; path = "../icon-red.png"; sourceTree = "<group>"; };
+		FF74D0FC16D0459A00BAC164 /* cordova.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova.png; sourceTree = "<group>"; };
+		FF74D0FD16D0459A00BAC164 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		FF74D0FE16D0459A00BAC164 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = index.html; path = ../index.html; sourceTree = "<group>"; };
+		FF74D0FF16D0459A00BAC164 /* index2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = index2.html; path = ../index2.html; sourceTree = "<group>"; };
+		FF74D10116D0459A00BAC164 /* jquery-1.9.0.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery-1.9.0.js"; sourceTree = "<group>"; };
+		FF74D10216D0459A00BAC164 /* jquery-ui-1.10.0.custom.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery-ui-1.10.0.custom.js"; sourceTree = "<group>"; };
+		FF74D10316D0459A00BAC164 /* jquery-ui-1.10.0.custom.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery-ui-1.10.0.custom.min.js"; sourceTree = "<group>"; };
+		FF74D10416D0459A00BAC164 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = main.js; path = ../main.js; sourceTree = "<group>"; };
+		FF74D10516D0459A00BAC164 /* master.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = master.css; path = ../master.css; sourceTree = "<group>"; };
+		FF74D10616D0459A00BAC164 /* my.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = my.css; path = ../my.css; sourceTree = "<group>"; };
+		FF74D10716D0459A00BAC164 /* my.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = my.js; path = ../my.js; sourceTree = "<group>"; };
+		FF74D10816D0459A00BAC164 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FF74D10C16D0459A00BAC164 /* icon-36-ldpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-36-ldpi.png"; sourceTree = "<group>"; };
+		FF74D10D16D0459A00BAC164 /* icon-48-mdpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-48-mdpi.png"; sourceTree = "<group>"; };
+		FF74D10E16D0459A00BAC164 /* icon-72-hdpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72-hdpi.png"; sourceTree = "<group>"; };
+		FF74D10F16D0459A00BAC164 /* icon-96-xhdpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-96-xhdpi.png"; sourceTree = "<group>"; };
+		FF74D11216D0459A00BAC164 /* screen-hdpi-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-hdpi-landscape.png"; sourceTree = "<group>"; };
+		FF74D11316D0459A00BAC164 /* screen-hdpi-portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-hdpi-portrait.png"; sourceTree = "<group>"; };
+		FF74D11416D0459A00BAC164 /* screen-ldpi-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-ldpi-landscape.png"; sourceTree = "<group>"; };
+		FF74D11516D0459A00BAC164 /* screen-ldpi-portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-ldpi-portrait.png"; sourceTree = "<group>"; };
+		FF74D11616D0459A00BAC164 /* screen-mdpi-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-mdpi-landscape.png"; sourceTree = "<group>"; };
+		FF74D11716D0459A00BAC164 /* screen-mdpi-portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-mdpi-portrait.png"; sourceTree = "<group>"; };
+		FF74D11816D0459A00BAC164 /* screen-xhdpi-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-xhdpi-landscape.png"; sourceTree = "<group>"; };
+		FF74D11916D0459A00BAC164 /* screen-xhdpi-portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-xhdpi-portrait.png"; sourceTree = "<group>"; };
+		FF74D11B16D0459A00BAC164 /* helper.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = helper.js; sourceTree = "<group>"; };
+		FF74D11C16D0459A00BAC164 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		FF74D11F16D0459A00BAC164 /* jasmine-html.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jasmine-html.js"; sourceTree = "<group>"; };
+		FF74D12016D0459A00BAC164 /* jasmine.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jasmine.css; sourceTree = "<group>"; };
+		FF74D12116D0459A00BAC164 /* jasmine.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jasmine.js; sourceTree = "<group>"; };
+		FF74D12216D0459A00BAC164 /* MIT.LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = MIT.LICENSE; sourceTree = "<group>"; };
+		FF74D12316D0459A00BAC164 /* spec.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = spec.html; path = ../spec.html; sourceTree = "<group>"; };
+		FF74D12516D04C7B00BAC164 /* Camera.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Camera.js; sourceTree = "<group>"; };
+		FF74D12616D051AA00BAC164 /* diary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = diary.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		FF74CFB116D0456200BAC164 = {
+			isa = PBXGroup;
+			children = (
+				FF74CFB816D0459A00BAC164 /* about.html */,
+				FF74D12616D051AA00BAC164 /* diary.html */,
+				FF74CFB916D0459A00BAC164 /* app.html */,
+				FF74CFBA16D0459A00BAC164 /* calendar.html */,
+				FF74CFBB16D0459A00BAC164 /* calendar2.html */,
+				FF74CFBC16D0459A00BAC164 /* css */,
+				FF74CFD016D0459A00BAC164 /* development-bundle */,
+				FF74D0F416D0459A00BAC164 /* foodApp.png */,
+				FF74D0F516D0459A00BAC164 /* foodIDApp */,
+				FF74D0F916D0459A00BAC164 /* icon-green.png */,
+				FF74D0FA16D0459A00BAC164 /* icon-red.png */,
+				FF74D0FB16D0459A00BAC164 /* img */,
+				FF74D0FE16D0459A00BAC164 /* index.html */,
+				FF74D0FF16D0459A00BAC164 /* index2.html */,
+				FF74D10016D0459A00BAC164 /* js */,
+				FF74D10416D0459A00BAC164 /* main.js */,
+				FF74D10516D0459A00BAC164 /* master.css */,
+				FF74D10616D0459A00BAC164 /* my.css */,
+				FF74D10716D0459A00BAC164 /* my.js */,
+				FF74D10816D0459A00BAC164 /* README.md */,
+				FF74D10916D0459A00BAC164 /* res */,
+				FF74D11A16D0459A00BAC164 /* spec */,
+				FF74D12316D0459A00BAC164 /* spec.html */,
+				FF74D12416D0459A00BAC164 /* www */,
+			);
+			sourceTree = "<group>";
+		};
+		FF74CFBC16D0459A00BAC164 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				FF74CFBD16D0459A00BAC164 /* overcast */,
+			);
+			name = css;
+			path = ../css;
+			sourceTree = "<group>";
+		};
+		FF74CFBD16D0459A00BAC164 /* overcast */ = {
+			isa = PBXGroup;
+			children = (
+				FF74CFBE16D0459A00BAC164 /* images */,
+				FF74CFCE16D0459A00BAC164 /* jquery-ui-1.10.0.custom.css */,
+				FF74CFCF16D0459A00BAC164 /* jquery-ui-1.10.0.custom.min.css */,
+			);
+			path = overcast;
+			sourceTree = "<group>";
+		};
+		FF74CFBE16D0459A00BAC164 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FF74CFBF16D0459A00BAC164 /* animated-overlay.gif */,
+				FF74CFC016D0459A00BAC164 /* ui-bg_flat_0_aaaaaa_40x100.png */,
+				FF74CFC116D0459A00BAC164 /* ui-bg_flat_0_eeeeee_40x100.png */,
+				FF74CFC216D0459A00BAC164 /* ui-bg_flat_55_c0402a_40x100.png */,
+				FF74CFC316D0459A00BAC164 /* ui-bg_flat_55_eeeeee_40x100.png */,
+				FF74CFC416D0459A00BAC164 /* ui-bg_glass_100_f8f8f8_1x400.png */,
+				FF74CFC516D0459A00BAC164 /* ui-bg_glass_35_dddddd_1x400.png */,
+				FF74CFC616D0459A00BAC164 /* ui-bg_glass_60_eeeeee_1x400.png */,
+				FF74CFC716D0459A00BAC164 /* ui-bg_inset-hard_75_999999_1x100.png */,
+				FF74CFC816D0459A00BAC164 /* ui-bg_inset-soft_50_c9c9c9_1x100.png */,
+				FF74CFC916D0459A00BAC164 /* ui-icons_3383bb_256x240.png */,
+				FF74CFCA16D0459A00BAC164 /* ui-icons_454545_256x240.png */,
+				FF74CFCB16D0459A00BAC164 /* ui-icons_70b2e1_256x240.png */,
+				FF74CFCC16D0459A00BAC164 /* ui-icons_999999_256x240.png */,
+				FF74CFCD16D0459A00BAC164 /* ui-icons_fbc856_256x240.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		FF74CFD016D0459A00BAC164 /* development-bundle */ = {
+			isa = PBXGroup;
+			children = (
+				FF74CFD116D0459A00BAC164 /* AUTHORS.txt */,
+				FF74CFD216D0459A00BAC164 /* demos */,
+				FF74CFEE16D0459A00BAC164 /* docs */,
+				FF74CFF016D0459A00BAC164 /* external */,
+				FF74CFF816D0459A00BAC164 /* grunt.js */,
+				FF74CFF916D0459A00BAC164 /* jquery-1.9.0.js */,
+				FF74CFFA16D0459A00BAC164 /* MIT-LICENSE.txt */,
+				FF74CFFB16D0459A00BAC164 /* package.json */,
+				FF74CFFC16D0459A00BAC164 /* README.md */,
+				FF74CFFD16D0459A00BAC164 /* themes */,
+				FF74D05416D0459A00BAC164 /* ui */,
+				FF74D0F216D0459A00BAC164 /* ui.core.jquery.json */,
+				FF74D0F316D0459A00BAC164 /* ui.datepicker.jquery.json */,
+			);
+			name = "development-bundle";
+			path = "../development-bundle";
+			sourceTree = "<group>";
+		};
+		FF74CFD216D0459A00BAC164 /* demos */ = {
+			isa = PBXGroup;
+			children = (
+				FF74CFD316D0459A00BAC164 /* datepicker */,
+				FF74CFE516D0459A00BAC164 /* demos.css */,
+				FF74CFE616D0459A00BAC164 /* images */,
+			);
+			path = demos;
+			sourceTree = "<group>";
+		};
+		FF74CFD316D0459A00BAC164 /* datepicker */ = {
+			isa = PBXGroup;
+			children = (
+				FF74CFD416D0459A00BAC164 /* alt-field.html */,
+				FF74CFD516D0459A00BAC164 /* animation.html */,
+				FF74CFD616D0459A00BAC164 /* buttonbar.html */,
+				FF74CFD716D0459A00BAC164 /* date-formats.html */,
+				FF74CFD816D0459A00BAC164 /* date-range.html */,
+				FF74CFD916D0459A00BAC164 /* default.html */,
+				FF74CFDA16D0459A00BAC164 /* dropdown-month-year.html */,
+				FF74CFDB16D0459A00BAC164 /* icon-trigger.html */,
+				FF74CFDC16D0459A00BAC164 /* images */,
+				FF74CFDE16D0459A00BAC164 /* index.html */,
+				FF74CFDF16D0459A00BAC164 /* inline.html */,
+				FF74CFE016D0459A00BAC164 /* localization.html */,
+				FF74CFE116D0459A00BAC164 /* min-max.html */,
+				FF74CFE216D0459A00BAC164 /* multiple-calendars.html */,
+				FF74CFE316D0459A00BAC164 /* other-months.html */,
+				FF74CFE416D0459A00BAC164 /* show-week.html */,
+			);
+			path = datepicker;
+			sourceTree = "<group>";
+		};
+		FF74CFDC16D0459A00BAC164 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FF74CFDD16D0459A00BAC164 /* calendar.gif */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		FF74CFE616D0459A00BAC164 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FF74CFE716D0459A00BAC164 /* calendar.gif */,
+				FF74CFE816D0459A00BAC164 /* demo-config-on-tile.gif */,
+				FF74CFE916D0459A00BAC164 /* demo-config-on.gif */,
+				FF74CFEA16D0459A00BAC164 /* demo-spindown-closed.gif */,
+				FF74CFEB16D0459A00BAC164 /* demo-spindown-open.gif */,
+				FF74CFEC16D0459A00BAC164 /* icon-docs-info.gif */,
+				FF74CFED16D0459A00BAC164 /* pbar-ani.gif */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		FF74CFEE16D0459A00BAC164 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				FF74CFEF16D0459A00BAC164 /* datepicker.html */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		FF74CFF016D0459A00BAC164 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				FF74CFF116D0459A00BAC164 /* globalize.culture.de-DE.js */,
+				FF74CFF216D0459A00BAC164 /* globalize.culture.ja-JP.js */,
+				FF74CFF316D0459A00BAC164 /* globalize.js */,
+				FF74CFF416D0459A00BAC164 /* jquery.mousewheel.js */,
+				FF74CFF516D0459A00BAC164 /* jshint.js */,
+				FF74CFF616D0459A00BAC164 /* qunit.css */,
+				FF74CFF716D0459A00BAC164 /* qunit.js */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		FF74CFFD16D0459A00BAC164 /* themes */ = {
+			isa = PBXGroup;
+			children = (
+				FF74CFFE16D0459A00BAC164 /* base */,
+				FF74D02816D0459A00BAC164 /* overcast */,
+			);
+			path = themes;
+			sourceTree = "<group>";
+		};
+		FF74CFFE16D0459A00BAC164 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				FF74CFFF16D0459A00BAC164 /* images */,
+				FF74D00E16D0459A00BAC164 /* jquery-ui.css */,
+				FF74D00F16D0459A00BAC164 /* jquery.ui.all.css */,
+				FF74D01016D0459A00BAC164 /* jquery.ui.base.css */,
+				FF74D01116D0459A00BAC164 /* jquery.ui.core.css */,
+				FF74D01216D0459A00BAC164 /* jquery.ui.datepicker.css */,
+				FF74D01316D0459A00BAC164 /* jquery.ui.theme.css */,
+				FF74D01416D0459A00BAC164 /* minified */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		FF74CFFF16D0459A00BAC164 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D00016D0459A00BAC164 /* animated-overlay.gif */,
+				FF74D00116D0459A00BAC164 /* ui-bg_flat_0_aaaaaa_40x100.png */,
+				FF74D00216D0459A00BAC164 /* ui-bg_flat_75_ffffff_40x100.png */,
+				FF74D00316D0459A00BAC164 /* ui-bg_glass_55_fbf9ee_1x400.png */,
+				FF74D00416D0459A00BAC164 /* ui-bg_glass_65_ffffff_1x400.png */,
+				FF74D00516D0459A00BAC164 /* ui-bg_glass_75_dadada_1x400.png */,
+				FF74D00616D0459A00BAC164 /* ui-bg_glass_75_e6e6e6_1x400.png */,
+				FF74D00716D0459A00BAC164 /* ui-bg_glass_95_fef1ec_1x400.png */,
+				FF74D00816D0459A00BAC164 /* ui-bg_highlight-soft_75_cccccc_1x100.png */,
+				FF74D00916D0459A00BAC164 /* ui-icons_222222_256x240.png */,
+				FF74D00A16D0459A00BAC164 /* ui-icons_2e83ff_256x240.png */,
+				FF74D00B16D0459A00BAC164 /* ui-icons_454545_256x240.png */,
+				FF74D00C16D0459A00BAC164 /* ui-icons_888888_256x240.png */,
+				FF74D00D16D0459A00BAC164 /* ui-icons_cd0a0a_256x240.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		FF74D01416D0459A00BAC164 /* minified */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D01516D0459A00BAC164 /* images */,
+				FF74D02416D0459A00BAC164 /* jquery-ui.min.css */,
+				FF74D02516D0459A00BAC164 /* jquery.ui.core.min.css */,
+				FF74D02616D0459A00BAC164 /* jquery.ui.datepicker.min.css */,
+				FF74D02716D0459A00BAC164 /* jquery.ui.theme.min.css */,
+			);
+			path = minified;
+			sourceTree = "<group>";
+		};
+		FF74D01516D0459A00BAC164 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D01616D0459A00BAC164 /* animated-overlay.gif */,
+				FF74D01716D0459A00BAC164 /* ui-bg_flat_0_aaaaaa_40x100.png */,
+				FF74D01816D0459A00BAC164 /* ui-bg_flat_75_ffffff_40x100.png */,
+				FF74D01916D0459A00BAC164 /* ui-bg_glass_55_fbf9ee_1x400.png */,
+				FF74D01A16D0459A00BAC164 /* ui-bg_glass_65_ffffff_1x400.png */,
+				FF74D01B16D0459A00BAC164 /* ui-bg_glass_75_dadada_1x400.png */,
+				FF74D01C16D0459A00BAC164 /* ui-bg_glass_75_e6e6e6_1x400.png */,
+				FF74D01D16D0459A00BAC164 /* ui-bg_glass_95_fef1ec_1x400.png */,
+				FF74D01E16D0459A00BAC164 /* ui-bg_highlight-soft_75_cccccc_1x100.png */,
+				FF74D01F16D0459A00BAC164 /* ui-icons_222222_256x240.png */,
+				FF74D02016D0459A00BAC164 /* ui-icons_2e83ff_256x240.png */,
+				FF74D02116D0459A00BAC164 /* ui-icons_454545_256x240.png */,
+				FF74D02216D0459A00BAC164 /* ui-icons_888888_256x240.png */,
+				FF74D02316D0459A00BAC164 /* ui-icons_cd0a0a_256x240.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		FF74D02816D0459A00BAC164 /* overcast */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D02916D0459A00BAC164 /* images */,
+				FF74D03916D0459A00BAC164 /* jquery-ui.css */,
+				FF74D03A16D0459A00BAC164 /* jquery.ui.all.css */,
+				FF74D03B16D0459A00BAC164 /* jquery.ui.base.css */,
+				FF74D03C16D0459A00BAC164 /* jquery.ui.core.css */,
+				FF74D03D16D0459A00BAC164 /* jquery.ui.datepicker.css */,
+				FF74D03E16D0459A00BAC164 /* jquery.ui.theme.css */,
+				FF74D03F16D0459A00BAC164 /* minified */,
+			);
+			path = overcast;
+			sourceTree = "<group>";
+		};
+		FF74D02916D0459A00BAC164 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D02A16D0459A00BAC164 /* animated-overlay.gif */,
+				FF74D02B16D0459A00BAC164 /* ui-bg_flat_0_aaaaaa_40x100.png */,
+				FF74D02C16D0459A00BAC164 /* ui-bg_flat_0_eeeeee_40x100.png */,
+				FF74D02D16D0459A00BAC164 /* ui-bg_flat_55_c0402a_40x100.png */,
+				FF74D02E16D0459A00BAC164 /* ui-bg_flat_55_eeeeee_40x100.png */,
+				FF74D02F16D0459A00BAC164 /* ui-bg_glass_100_f8f8f8_1x400.png */,
+				FF74D03016D0459A00BAC164 /* ui-bg_glass_35_dddddd_1x400.png */,
+				FF74D03116D0459A00BAC164 /* ui-bg_glass_60_eeeeee_1x400.png */,
+				FF74D03216D0459A00BAC164 /* ui-bg_inset-hard_75_999999_1x100.png */,
+				FF74D03316D0459A00BAC164 /* ui-bg_inset-soft_50_c9c9c9_1x100.png */,
+				FF74D03416D0459A00BAC164 /* ui-icons_3383bb_256x240.png */,
+				FF74D03516D0459A00BAC164 /* ui-icons_454545_256x240.png */,
+				FF74D03616D0459A00BAC164 /* ui-icons_70b2e1_256x240.png */,
+				FF74D03716D0459A00BAC164 /* ui-icons_999999_256x240.png */,
+				FF74D03816D0459A00BAC164 /* ui-icons_fbc856_256x240.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		FF74D03F16D0459A00BAC164 /* minified */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D04016D0459A00BAC164 /* images */,
+				FF74D05016D0459A00BAC164 /* jquery-ui.min.css */,
+				FF74D05116D0459A00BAC164 /* jquery.ui.core.min.css */,
+				FF74D05216D0459A00BAC164 /* jquery.ui.datepicker.min.css */,
+				FF74D05316D0459A00BAC164 /* jquery.ui.theme.min.css */,
+			);
+			path = minified;
+			sourceTree = "<group>";
+		};
+		FF74D04016D0459A00BAC164 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D04116D0459A00BAC164 /* animated-overlay.gif */,
+				FF74D04216D0459A00BAC164 /* ui-bg_flat_0_aaaaaa_40x100.png */,
+				FF74D04316D0459A00BAC164 /* ui-bg_flat_0_eeeeee_40x100.png */,
+				FF74D04416D0459A00BAC164 /* ui-bg_flat_55_c0402a_40x100.png */,
+				FF74D04516D0459A00BAC164 /* ui-bg_flat_55_eeeeee_40x100.png */,
+				FF74D04616D0459A00BAC164 /* ui-bg_glass_100_f8f8f8_1x400.png */,
+				FF74D04716D0459A00BAC164 /* ui-bg_glass_35_dddddd_1x400.png */,
+				FF74D04816D0459A00BAC164 /* ui-bg_glass_60_eeeeee_1x400.png */,
+				FF74D04916D0459A00BAC164 /* ui-bg_inset-hard_75_999999_1x100.png */,
+				FF74D04A16D0459A00BAC164 /* ui-bg_inset-soft_50_c9c9c9_1x100.png */,
+				FF74D04B16D0459A00BAC164 /* ui-icons_3383bb_256x240.png */,
+				FF74D04C16D0459A00BAC164 /* ui-icons_454545_256x240.png */,
+				FF74D04D16D0459A00BAC164 /* ui-icons_70b2e1_256x240.png */,
+				FF74D04E16D0459A00BAC164 /* ui-icons_999999_256x240.png */,
+				FF74D04F16D0459A00BAC164 /* ui-icons_fbc856_256x240.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		FF74D05416D0459A00BAC164 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D05516D0459A00BAC164 /* i18n */,
+				FF74D0A016D0459A00BAC164 /* jquery-ui.custom.js */,
+				FF74D0A116D0459A00BAC164 /* jquery.ui.core.js */,
+				FF74D0A216D0459A00BAC164 /* jquery.ui.datepicker.js */,
+				FF74D0A316D0459A00BAC164 /* minified */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		FF74D05516D0459A00BAC164 /* i18n */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D05616D0459A00BAC164 /* jquery-ui-i18n.js */,
+				FF74D05716D0459A00BAC164 /* jquery.ui.datepicker-af.js */,
+				FF74D05816D0459A00BAC164 /* jquery.ui.datepicker-ar-DZ.js */,
+				FF74D05916D0459A00BAC164 /* jquery.ui.datepicker-ar.js */,
+				FF74D05A16D0459A00BAC164 /* jquery.ui.datepicker-az.js */,
+				FF74D05B16D0459A00BAC164 /* jquery.ui.datepicker-be.js */,
+				FF74D05C16D0459A00BAC164 /* jquery.ui.datepicker-bg.js */,
+				FF74D05D16D0459A00BAC164 /* jquery.ui.datepicker-bs.js */,
+				FF74D05E16D0459A00BAC164 /* jquery.ui.datepicker-ca.js */,
+				FF74D05F16D0459A00BAC164 /* jquery.ui.datepicker-cs.js */,
+				FF74D06016D0459A00BAC164 /* jquery.ui.datepicker-cy-GB.js */,
+				FF74D06116D0459A00BAC164 /* jquery.ui.datepicker-da.js */,
+				FF74D06216D0459A00BAC164 /* jquery.ui.datepicker-de.js */,
+				FF74D06316D0459A00BAC164 /* jquery.ui.datepicker-el.js */,
+				FF74D06416D0459A00BAC164 /* jquery.ui.datepicker-en-AU.js */,
+				FF74D06516D0459A00BAC164 /* jquery.ui.datepicker-en-GB.js */,
+				FF74D06616D0459A00BAC164 /* jquery.ui.datepicker-en-NZ.js */,
+				FF74D06716D0459A00BAC164 /* jquery.ui.datepicker-eo.js */,
+				FF74D06816D0459A00BAC164 /* jquery.ui.datepicker-es.js */,
+				FF74D06916D0459A00BAC164 /* jquery.ui.datepicker-et.js */,
+				FF74D06A16D0459A00BAC164 /* jquery.ui.datepicker-eu.js */,
+				FF74D06B16D0459A00BAC164 /* jquery.ui.datepicker-fa.js */,
+				FF74D06C16D0459A00BAC164 /* jquery.ui.datepicker-fi.js */,
+				FF74D06D16D0459A00BAC164 /* jquery.ui.datepicker-fo.js */,
+				FF74D06E16D0459A00BAC164 /* jquery.ui.datepicker-fr-CA.js */,
+				FF74D06F16D0459A00BAC164 /* jquery.ui.datepicker-fr-CH.js */,
+				FF74D07016D0459A00BAC164 /* jquery.ui.datepicker-fr.js */,
+				FF74D07116D0459A00BAC164 /* jquery.ui.datepicker-gl.js */,
+				FF74D07216D0459A00BAC164 /* jquery.ui.datepicker-he.js */,
+				FF74D07316D0459A00BAC164 /* jquery.ui.datepicker-hi.js */,
+				FF74D07416D0459A00BAC164 /* jquery.ui.datepicker-hr.js */,
+				FF74D07516D0459A00BAC164 /* jquery.ui.datepicker-hu.js */,
+				FF74D07616D0459A00BAC164 /* jquery.ui.datepicker-hy.js */,
+				FF74D07716D0459A00BAC164 /* jquery.ui.datepicker-id.js */,
+				FF74D07816D0459A00BAC164 /* jquery.ui.datepicker-is.js */,
+				FF74D07916D0459A00BAC164 /* jquery.ui.datepicker-it.js */,
+				FF74D07A16D0459A00BAC164 /* jquery.ui.datepicker-ja.js */,
+				FF74D07B16D0459A00BAC164 /* jquery.ui.datepicker-ka.js */,
+				FF74D07C16D0459A00BAC164 /* jquery.ui.datepicker-kk.js */,
+				FF74D07D16D0459A00BAC164 /* jquery.ui.datepicker-km.js */,
+				FF74D07E16D0459A00BAC164 /* jquery.ui.datepicker-ko.js */,
+				FF74D07F16D0459A00BAC164 /* jquery.ui.datepicker-ky.js */,
+				FF74D08016D0459A00BAC164 /* jquery.ui.datepicker-lb.js */,
+				FF74D08116D0459A00BAC164 /* jquery.ui.datepicker-lt.js */,
+				FF74D08216D0459A00BAC164 /* jquery.ui.datepicker-lv.js */,
+				FF74D08316D0459A00BAC164 /* jquery.ui.datepicker-mk.js */,
+				FF74D08416D0459A00BAC164 /* jquery.ui.datepicker-ml.js */,
+				FF74D08516D0459A00BAC164 /* jquery.ui.datepicker-ms.js */,
+				FF74D08616D0459A00BAC164 /* jquery.ui.datepicker-nb.js */,
+				FF74D08716D0459A00BAC164 /* jquery.ui.datepicker-nl-BE.js */,
+				FF74D08816D0459A00BAC164 /* jquery.ui.datepicker-nl.js */,
+				FF74D08916D0459A00BAC164 /* jquery.ui.datepicker-nn.js */,
+				FF74D08A16D0459A00BAC164 /* jquery.ui.datepicker-no.js */,
+				FF74D08B16D0459A00BAC164 /* jquery.ui.datepicker-pl.js */,
+				FF74D08C16D0459A00BAC164 /* jquery.ui.datepicker-pt-BR.js */,
+				FF74D08D16D0459A00BAC164 /* jquery.ui.datepicker-pt.js */,
+				FF74D08E16D0459A00BAC164 /* jquery.ui.datepicker-rm.js */,
+				FF74D08F16D0459A00BAC164 /* jquery.ui.datepicker-ro.js */,
+				FF74D09016D0459A00BAC164 /* jquery.ui.datepicker-ru.js */,
+				FF74D09116D0459A00BAC164 /* jquery.ui.datepicker-sk.js */,
+				FF74D09216D0459A00BAC164 /* jquery.ui.datepicker-sl.js */,
+				FF74D09316D0459A00BAC164 /* jquery.ui.datepicker-sq.js */,
+				FF74D09416D0459A00BAC164 /* jquery.ui.datepicker-sr-SR.js */,
+				FF74D09516D0459A00BAC164 /* jquery.ui.datepicker-sr.js */,
+				FF74D09616D0459A00BAC164 /* jquery.ui.datepicker-sv.js */,
+				FF74D09716D0459A00BAC164 /* jquery.ui.datepicker-ta.js */,
+				FF74D09816D0459A00BAC164 /* jquery.ui.datepicker-th.js */,
+				FF74D09916D0459A00BAC164 /* jquery.ui.datepicker-tj.js */,
+				FF74D09A16D0459A00BAC164 /* jquery.ui.datepicker-tr.js */,
+				FF74D09B16D0459A00BAC164 /* jquery.ui.datepicker-uk.js */,
+				FF74D09C16D0459A00BAC164 /* jquery.ui.datepicker-vi.js */,
+				FF74D09D16D0459A00BAC164 /* jquery.ui.datepicker-zh-CN.js */,
+				FF74D09E16D0459A00BAC164 /* jquery.ui.datepicker-zh-HK.js */,
+				FF74D09F16D0459A00BAC164 /* jquery.ui.datepicker-zh-TW.js */,
+			);
+			path = i18n;
+			sourceTree = "<group>";
+		};
+		FF74D0A316D0459A00BAC164 /* minified */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D0A416D0459A00BAC164 /* i18n */,
+				FF74D0EF16D0459A00BAC164 /* jquery-ui.custom.min.js */,
+				FF74D0F016D0459A00BAC164 /* jquery.ui.core.min.js */,
+				FF74D0F116D0459A00BAC164 /* jquery.ui.datepicker.min.js */,
+			);
+			path = minified;
+			sourceTree = "<group>";
+		};
+		FF74D0A416D0459A00BAC164 /* i18n */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D0A516D0459A00BAC164 /* jquery-ui-i18n.min.js */,
+				FF74D0A616D0459A00BAC164 /* jquery.ui.datepicker-af.min.js */,
+				FF74D0A716D0459A00BAC164 /* jquery.ui.datepicker-ar-DZ.min.js */,
+				FF74D0A816D0459A00BAC164 /* jquery.ui.datepicker-ar.min.js */,
+				FF74D0A916D0459A00BAC164 /* jquery.ui.datepicker-az.min.js */,
+				FF74D0AA16D0459A00BAC164 /* jquery.ui.datepicker-be.min.js */,
+				FF74D0AB16D0459A00BAC164 /* jquery.ui.datepicker-bg.min.js */,
+				FF74D0AC16D0459A00BAC164 /* jquery.ui.datepicker-bs.min.js */,
+				FF74D0AD16D0459A00BAC164 /* jquery.ui.datepicker-ca.min.js */,
+				FF74D0AE16D0459A00BAC164 /* jquery.ui.datepicker-cs.min.js */,
+				FF74D0AF16D0459A00BAC164 /* jquery.ui.datepicker-cy-GB.min.js */,
+				FF74D0B016D0459A00BAC164 /* jquery.ui.datepicker-da.min.js */,
+				FF74D0B116D0459A00BAC164 /* jquery.ui.datepicker-de.min.js */,
+				FF74D0B216D0459A00BAC164 /* jquery.ui.datepicker-el.min.js */,
+				FF74D0B316D0459A00BAC164 /* jquery.ui.datepicker-en-AU.min.js */,
+				FF74D0B416D0459A00BAC164 /* jquery.ui.datepicker-en-GB.min.js */,
+				FF74D0B516D0459A00BAC164 /* jquery.ui.datepicker-en-NZ.min.js */,
+				FF74D0B616D0459A00BAC164 /* jquery.ui.datepicker-eo.min.js */,
+				FF74D0B716D0459A00BAC164 /* jquery.ui.datepicker-es.min.js */,
+				FF74D0B816D0459A00BAC164 /* jquery.ui.datepicker-et.min.js */,
+				FF74D0B916D0459A00BAC164 /* jquery.ui.datepicker-eu.min.js */,
+				FF74D0BA16D0459A00BAC164 /* jquery.ui.datepicker-fa.min.js */,
+				FF74D0BB16D0459A00BAC164 /* jquery.ui.datepicker-fi.min.js */,
+				FF74D0BC16D0459A00BAC164 /* jquery.ui.datepicker-fo.min.js */,
+				FF74D0BD16D0459A00BAC164 /* jquery.ui.datepicker-fr-CA.min.js */,
+				FF74D0BE16D0459A00BAC164 /* jquery.ui.datepicker-fr-CH.min.js */,
+				FF74D0BF16D0459A00BAC164 /* jquery.ui.datepicker-fr.min.js */,
+				FF74D0C016D0459A00BAC164 /* jquery.ui.datepicker-gl.min.js */,
+				FF74D0C116D0459A00BAC164 /* jquery.ui.datepicker-he.min.js */,
+				FF74D0C216D0459A00BAC164 /* jquery.ui.datepicker-hi.min.js */,
+				FF74D0C316D0459A00BAC164 /* jquery.ui.datepicker-hr.min.js */,
+				FF74D0C416D0459A00BAC164 /* jquery.ui.datepicker-hu.min.js */,
+				FF74D0C516D0459A00BAC164 /* jquery.ui.datepicker-hy.min.js */,
+				FF74D0C616D0459A00BAC164 /* jquery.ui.datepicker-id.min.js */,
+				FF74D0C716D0459A00BAC164 /* jquery.ui.datepicker-is.min.js */,
+				FF74D0C816D0459A00BAC164 /* jquery.ui.datepicker-it.min.js */,
+				FF74D0C916D0459A00BAC164 /* jquery.ui.datepicker-ja.min.js */,
+				FF74D0CA16D0459A00BAC164 /* jquery.ui.datepicker-ka.min.js */,
+				FF74D0CB16D0459A00BAC164 /* jquery.ui.datepicker-kk.min.js */,
+				FF74D0CC16D0459A00BAC164 /* jquery.ui.datepicker-km.min.js */,
+				FF74D0CD16D0459A00BAC164 /* jquery.ui.datepicker-ko.min.js */,
+				FF74D0CE16D0459A00BAC164 /* jquery.ui.datepicker-ky.min.js */,
+				FF74D0CF16D0459A00BAC164 /* jquery.ui.datepicker-lb.min.js */,
+				FF74D0D016D0459A00BAC164 /* jquery.ui.datepicker-lt.min.js */,
+				FF74D0D116D0459A00BAC164 /* jquery.ui.datepicker-lv.min.js */,
+				FF74D0D216D0459A00BAC164 /* jquery.ui.datepicker-mk.min.js */,
+				FF74D0D316D0459A00BAC164 /* jquery.ui.datepicker-ml.min.js */,
+				FF74D0D416D0459A00BAC164 /* jquery.ui.datepicker-ms.min.js */,
+				FF74D0D516D0459A00BAC164 /* jquery.ui.datepicker-nb.min.js */,
+				FF74D0D616D0459A00BAC164 /* jquery.ui.datepicker-nl-BE.min.js */,
+				FF74D0D716D0459A00BAC164 /* jquery.ui.datepicker-nl.min.js */,
+				FF74D0D816D0459A00BAC164 /* jquery.ui.datepicker-nn.min.js */,
+				FF74D0D916D0459A00BAC164 /* jquery.ui.datepicker-no.min.js */,
+				FF74D0DA16D0459A00BAC164 /* jquery.ui.datepicker-pl.min.js */,
+				FF74D0DB16D0459A00BAC164 /* jquery.ui.datepicker-pt-BR.min.js */,
+				FF74D0DC16D0459A00BAC164 /* jquery.ui.datepicker-pt.min.js */,
+				FF74D0DD16D0459A00BAC164 /* jquery.ui.datepicker-rm.min.js */,
+				FF74D0DE16D0459A00BAC164 /* jquery.ui.datepicker-ro.min.js */,
+				FF74D0DF16D0459A00BAC164 /* jquery.ui.datepicker-ru.min.js */,
+				FF74D0E016D0459A00BAC164 /* jquery.ui.datepicker-sk.min.js */,
+				FF74D0E116D0459A00BAC164 /* jquery.ui.datepicker-sl.min.js */,
+				FF74D0E216D0459A00BAC164 /* jquery.ui.datepicker-sq.min.js */,
+				FF74D0E316D0459A00BAC164 /* jquery.ui.datepicker-sr-SR.min.js */,
+				FF74D0E416D0459A00BAC164 /* jquery.ui.datepicker-sr.min.js */,
+				FF74D0E516D0459A00BAC164 /* jquery.ui.datepicker-sv.min.js */,
+				FF74D0E616D0459A00BAC164 /* jquery.ui.datepicker-ta.min.js */,
+				FF74D0E716D0459A00BAC164 /* jquery.ui.datepicker-th.min.js */,
+				FF74D0E816D0459A00BAC164 /* jquery.ui.datepicker-tj.min.js */,
+				FF74D0E916D0459A00BAC164 /* jquery.ui.datepicker-tr.min.js */,
+				FF74D0EA16D0459A00BAC164 /* jquery.ui.datepicker-uk.min.js */,
+				FF74D0EB16D0459A00BAC164 /* jquery.ui.datepicker-vi.min.js */,
+				FF74D0EC16D0459A00BAC164 /* jquery.ui.datepicker-zh-CN.min.js */,
+				FF74D0ED16D0459A00BAC164 /* jquery.ui.datepicker-zh-HK.min.js */,
+				FF74D0EE16D0459A00BAC164 /* jquery.ui.datepicker-zh-TW.min.js */,
+			);
+			path = i18n;
+			sourceTree = "<group>";
+		};
+		FF74D0F516D0459A00BAC164 /* foodIDApp */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D0F616D0459A00BAC164 /* foodIDApp.xcodeproj */,
+			);
+			name = foodIDApp;
+			sourceTree = "<group>";
+		};
+		FF74D0F716D0459A00BAC164 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF74D0FB16D0459A00BAC164 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D0FC16D0459A00BAC164 /* cordova.png */,
+				FF74D0FD16D0459A00BAC164 /* logo.png */,
+			);
+			name = img;
+			path = ../img;
+			sourceTree = "<group>";
+		};
+		FF74D10016D0459A00BAC164 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D10116D0459A00BAC164 /* jquery-1.9.0.js */,
+				FF74D10216D0459A00BAC164 /* jquery-ui-1.10.0.custom.js */,
+				FF74D10316D0459A00BAC164 /* jquery-ui-1.10.0.custom.min.js */,
+				FF74D12516D04C7B00BAC164 /* Camera.js */,
+			);
+			name = js;
+			path = ../js;
+			sourceTree = "<group>";
+		};
+		FF74D10916D0459A00BAC164 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D10A16D0459A00BAC164 /* icon */,
+				FF74D11016D0459A00BAC164 /* screen */,
+			);
+			name = res;
+			path = ../res;
+			sourceTree = "<group>";
+		};
+		FF74D10A16D0459A00BAC164 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D10B16D0459A00BAC164 /* android */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		FF74D10B16D0459A00BAC164 /* android */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D10C16D0459A00BAC164 /* icon-36-ldpi.png */,
+				FF74D10D16D0459A00BAC164 /* icon-48-mdpi.png */,
+				FF74D10E16D0459A00BAC164 /* icon-72-hdpi.png */,
+				FF74D10F16D0459A00BAC164 /* icon-96-xhdpi.png */,
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		FF74D11016D0459A00BAC164 /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D11116D0459A00BAC164 /* android */,
+			);
+			path = screen;
+			sourceTree = "<group>";
+		};
+		FF74D11116D0459A00BAC164 /* android */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D11216D0459A00BAC164 /* screen-hdpi-landscape.png */,
+				FF74D11316D0459A00BAC164 /* screen-hdpi-portrait.png */,
+				FF74D11416D0459A00BAC164 /* screen-ldpi-landscape.png */,
+				FF74D11516D0459A00BAC164 /* screen-ldpi-portrait.png */,
+				FF74D11616D0459A00BAC164 /* screen-mdpi-landscape.png */,
+				FF74D11716D0459A00BAC164 /* screen-mdpi-portrait.png */,
+				FF74D11816D0459A00BAC164 /* screen-xhdpi-landscape.png */,
+				FF74D11916D0459A00BAC164 /* screen-xhdpi-portrait.png */,
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		FF74D11A16D0459A00BAC164 /* spec */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D11B16D0459A00BAC164 /* helper.js */,
+				FF74D11C16D0459A00BAC164 /* index.js */,
+				FF74D11D16D0459A00BAC164 /* lib */,
+			);
+			name = spec;
+			path = ../spec;
+			sourceTree = "<group>";
+		};
+		FF74D11D16D0459A00BAC164 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D11E16D0459A00BAC164 /* jasmine-1.2.0 */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		FF74D11E16D0459A00BAC164 /* jasmine-1.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				FF74D11F16D0459A00BAC164 /* jasmine-html.js */,
+				FF74D12016D0459A00BAC164 /* jasmine.css */,
+				FF74D12116D0459A00BAC164 /* jasmine.js */,
+				FF74D12216D0459A00BAC164 /* MIT.LICENSE */,
+			);
+			path = "jasmine-1.2.0";
+			sourceTree = "<group>";
+		};
+		FF74D12416D0459A00BAC164 /* www */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = www;
+			path = ../www;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		FF74CFB216D0456200BAC164 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = FF74CFB516D0456200BAC164 /* Build configuration list for PBXProject "foodIDApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF74CFB116D0456200BAC164;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FF74D0F716D0459A00BAC164 /* Products */;
+					ProjectRef = FF74D0F616D0459A00BAC164 /* foodIDApp.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		FF74CFB616D0456200BAC164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		FF74CFB716D0456200BAC164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF74CFB516D0456200BAC164 /* Build configuration list for PBXProject "foodIDApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF74CFB616D0456200BAC164 /* Debug */,
+				FF74CFB716D0456200BAC164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF74CFB216D0456200BAC164 /* Project object */;
+}
