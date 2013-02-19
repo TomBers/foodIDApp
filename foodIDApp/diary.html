@@ -8,6 +8,14 @@
         </title>
         <link rel="stylesheet" type="text/css" href="http://jquerymobile.com/demos/1.0a4.1/experiments/ui-datepicker/jquery.ui.datepicker.mobile.css" />
         <script src="phonegap.js"></script>
+        	<script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+        <script>
+            $( document ).bind( "mobileinit", function(){
+                               $.mobile.page.prototype.options.degradeInputs.date = true;
+                               });
+            
+            
+            </script>
         <script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
         <script src="http://jquerymobile.com/demos/1.0a4.1/experiments/ui-datepicker/jQuery.ui.datepicker.js"></script>
         <script src="http://jquerymobile.com/demos/1.0a4.1/experiments/ui-datepicker/jquery.ui.datepicker.mobile.js"></script>
@@ -157,7 +165,9 @@
                 
             }
             
-            
+           
+            //reset type=date inputs to text
+       
             
             </script>
     </head>
@@ -169,8 +179,8 @@
                      </div>
             
                     <form>
-                <input type="date" name="date" id="date" value=""  />	
-            </form>
+                        <input type="date" name="date" id="date" value=""  />	
+                    </form>
                     <footer>
                         <div data-role="footer" data-id="foo1" data-position="fixed">
                             <div data-role="navbar">
