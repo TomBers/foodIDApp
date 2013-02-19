@@ -177,18 +177,22 @@ function readerSuccess(entries) {
 }
 
 function readerSuccess2(entries) {
+    
+    
     var i;
 var date = "INVALID";
+    
+    //This needs to be replaced was Dojo - now JQuery
 require(["dijit/registry"], function(registry){
     date = registry.byId("datePicker").get("value");
 });
 
 
 
-
+//Needs to be replaced
 var split = date.split("-");
 
-
+//Get slected date from calendar from JQuery
 var newDate = split[2]+parseInt(split[1]-1,10)+split[0];
 
 
@@ -288,7 +292,9 @@ var newDate = split[2]+parseInt(split[1]-1,10)+split[0];
     }
     
     
-    
+    //START HERE!!!
+        
+    //FOLLOW the call backs - becareful !! Notive the letters and words - the functions are very similarly named
     function showDiary(){
     var storage = window.localStorage;
    
