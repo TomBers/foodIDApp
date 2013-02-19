@@ -336,18 +336,18 @@
 		FF74D12216D0459A00BAC164 /* MIT.LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = MIT.LICENSE; sourceTree = "<group>"; };
 		FF74D12316D0459A00BAC164 /* spec.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = spec.html; path = ../spec.html; sourceTree = "<group>"; };
 		FF74D12516D04C7B00BAC164 /* Camera.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Camera.js; sourceTree = "<group>"; };
-		FF74D12616D051AA00BAC164 /* diary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = diary.html; sourceTree = "<group>"; };
 		FF9F25EC16D41A930098DAF3 /* jQuery.ui.datepicker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jQuery.ui.datepicker.js; sourceTree = "<group>"; };
 		FF9F25ED16D41A930098DAF3 /* jquery.ui.datepicker.mobile.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.ui.datepicker.mobile.js; sourceTree = "<group>"; };
 		FF9F25EE16D41AB60098DAF3 /* jquery.ui.datepicker.mobile.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.datepicker.mobile.css; sourceTree = "<group>"; };
+		FF9F25EF16D432300098DAF3 /* diary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = diary.html; path = ../diary.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		FF74CFB116D0456200BAC164 = {
 			isa = PBXGroup;
 			children = (
+				FF9F25EF16D432300098DAF3 /* diary.html */,
 				FF74CFB816D0459A00BAC164 /* about.html */,
-				FF74D12616D051AA00BAC164 /* diary.html */,
 				FF74CFB916D0459A00BAC164 /* app.html */,
 				FF74CFBA16D0459A00BAC164 /* calendar.html */,
 				FF74CFBB16D0459A00BAC164 /* calendar2.html */,
