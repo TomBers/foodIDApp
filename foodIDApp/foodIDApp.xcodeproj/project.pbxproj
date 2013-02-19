@@ -337,6 +337,9 @@
 		FF74D12316D0459A00BAC164 /* spec.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = spec.html; path = ../spec.html; sourceTree = "<group>"; };
 		FF74D12516D04C7B00BAC164 /* Camera.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Camera.js; sourceTree = "<group>"; };
 		FF74D12616D051AA00BAC164 /* diary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = diary.html; sourceTree = "<group>"; };
+		FF9F25EC16D41A930098DAF3 /* jQuery.ui.datepicker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jQuery.ui.datepicker.js; sourceTree = "<group>"; };
+		FF9F25ED16D41A930098DAF3 /* jquery.ui.datepicker.mobile.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.ui.datepicker.mobile.js; sourceTree = "<group>"; };
+		FF9F25EE16D41AB60098DAF3 /* jquery.ui.datepicker.mobile.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jquery.ui.datepicker.mobile.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -373,6 +376,7 @@
 		FF74CFBC16D0459A00BAC164 /* css */ = {
 			isa = PBXGroup;
 			children = (
+				FF9F25EE16D41AB60098DAF3 /* jquery.ui.datepicker.mobile.css */,
 				FF74CFBD16D0459A00BAC164 /* overcast */,
 			);
 			name = css;
@@ -869,6 +873,8 @@
 		FF74D10016D0459A00BAC164 /* js */ = {
 			isa = PBXGroup;
 			children = (
+				FF9F25EC16D41A930098DAF3 /* jQuery.ui.datepicker.js */,
+				FF9F25ED16D41A930098DAF3 /* jquery.ui.datepicker.mobile.js */,
 				FF74D10116D0459A00BAC164 /* jquery-1.9.0.js */,
 				FF74D10216D0459A00BAC164 /* jquery-ui-1.10.0.custom.js */,
 				FF74D10316D0459A00BAC164 /* jquery-ui-1.10.0.custom.min.js */,
