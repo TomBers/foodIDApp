@@ -1,36 +1,165 @@
 <html>
     <head>
       
-    
-      
-    </head>
-
-            <body>
-                <div data-role="page" id="page1">
-                    <div data-role="content">
-                
-                <input type="date" id="datepicker" hidden="true"/>
-            <br>
-            <br>
-                
-                        <a data-role="button" data-theme="d" href="" data-icon="check"
-                            data-iconpos="right" id="analyse">
-                            Analyse
-                        </a>
-                    </div>
         
-                    <script>
+   
+    </head>
+    
+    <body>
+        <div data-role="page" id="Home">
+            <div data-role="content" id="datPick">
+                <input type="date" id="datepicker" hidden="true"/>
+                <br>
+                <br>
+                <a data-role="button" data-theme="d" href="" data-icon="check" data-iconpos="right" id="analyse">Analyse</a>
+            </div>
+            
+            <div id="MealGallery" data-role="content" hidden="true">
+                
+                    
+                        <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="breakfastb" class="buttons" value="breakfast">
+                            Breakfast
+                        </a>
+                        <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="lunchb" class="buttons" value="lunch">
+                            Lunch
+                        </a>
+                        <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="dinnerb" class="buttons" value="dinner">
+                            Dinner
+                        </a> 
+                        <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="resultb" class="buttons" value="result">
+                            Results
+                        </a>
+                
+                <div id="breakfast" style="position: static; display:none;">
+                    <img src="img/001.jpg" alt="image">
+                        </div>
+                
+                <div id="lunch" style="position: static; display:none;">
+                    <img src="img/002.jpg" alt="image">
+                        </div>
+                
+                <div id="dinner" style="position: static; display:none;">
+                    <img src="img/003.jpg" alt="image" >
+                        </div>
+                
+                <div id="result" style=" position: static; display:none;">
+                    <img src="img/results.png" alt="image">
+                        </div>
+            
+                
+                    </div>
+    
+        
+                            <script>
+                        
+                        var selDat;
+                                
+                             
+                         
+                                $("#breakfastb").click(function () {
+                                                $('.buttons').hide();
+                                                       $('#breakfast').show();
+                                                });
+//
+                                $("#lunchb").click(function () {
+                                                       $('.buttons').hide();
+                                                       $('#lunch').show();
+                                                       });
+                                $("#dinnerb").click(function () {
+                                                   $('.buttons').hide();
+                                                   $('#dinner').show();
+                                                   });
+                                
+                                $("#resultb").click(function () {
+                                                   $('.buttons').hide();
+                                                   $('#result').show();
+                                                   });
+                                
+                                
+                                
                         $("#analyse").click(function () {
-                                        var date = $('#datepicker').datepicker({ dateFormat: 'yy-mm-dd' }).val();
-                                        var pts=date.split("/");
-                                         
+                                            var date = $('#datepicker').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+                                            var pts=date.split("/");
+                                            
                                             var day = pts[1];
                                             var month = pts[0];
                                             var year = pts[2];
-                                            alert("Day : " + day + " Month : " + month + " Year : " + year );
-                                     });
+                                            //alert("Day : " + day + " Month : " + month + " Year : " + year );
+                                            $("#datPick").hide();
+                                            $("#MealGallery").show();
+                                            
+                                            // showPics(day,month,year);
+                                            selDat = day+month+year;
+//                                            alert(selDat);
+                                            //                                showDiary();
+                                            });
+                        
+                        function showPics(day,month,year){
+                            alert("Day : " + day + " Month : " + month + " Year : " + year );
+                            
+                            
+                        }
+                        
+                        
+                        function showDiary(){
+                            var storage = window.localStorage;
+                            
+                            //get date from dojo object
+                            
+                            window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccessB, fail);
+                            
+                        }
+                        
+                        function onFileSystemSuccessB(fileSystem) {
+                            fileSystem.root.getDirectory("FoodDiary", {create: true, exclusive: false}, getDirSuccess3, fail);
+                        }
+                        
+                        function getDirSuccess3(dirEntry) {
+                            // Get a directory reader
+                            var directoryReader = dirEntry.createReader();
+                            
+                            // Get a list of all the entries in the directory
+                            directoryReader.readEntries(readerSuccess2,fail);
+                        }
+                        
+                        function readerSuccess2(entries) {
+                            
+                            // day.toString() +month.toString() + year.toString()+ value+".fooddiary";
+                            newDate = selDat;
+                            
+                            alert(newDate);
+                            var div = document.getElementById("MealGallery");
+                            //                            div.innerHTML = '';
+                            
+                            for (i=0; i<entries.length; i++) {
+                                // Assuming everything in the Music directory is an mp3, go nuts
+                                // otherwise check entries[i].name to see if it ends with .mp3
+                                if(entries[i].name.indexOf(newDate) !== -1){
+                                    //this is found ;)
+                                    
+                                    var reader = new FileReader();
+                                    
+                                    reader.onloadend = function(evt) {
+                                        console.log("Read as text");
+                                        
+                                        
+                                        var img = new Image();
+                                        img.src = "data:image/jpeg;base64,"+evt.target.result;
+                                        img.height=200;
+                                        img.width=200;
+                                        
+                                        div.appendChild(img);
+                                        
+                                    };
+                                    reader.readAsText(entries[i]);
+                                }
+                            }
+                        }
+                        
+                        
                         </script>
-               
+                    
+                    
                   
                   
                     <footer>
