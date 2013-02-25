@@ -30,6 +30,7 @@
                             Results
                         </a>
            
+                    <div id="resultsForFood"></div>
                 <!--
                 <div id="breakfast" style="position: static; display:none;">
                     <img src="img/001.jpg" alt="image">
@@ -139,10 +140,10 @@
                             var newDate = selDat;
                             
                             alert(newDate);
-                            var div = document.getElementById("MealGallery");
-                            //                            div.innerHTML = '';
-                            if(div==null)alert("meal gallery div not found");
-                            else{ alert("meal gallery div found");}
+                            var div = document.getElementById("resultsForFood");
+                              div.innerHTML = '';
+                            if(div==null)alert(" div not found");
+                            else{ alert(" div found");}
                             
                             for (i=0; i<entries.length; i++) {
                                 // Assuming everything in the Music directory is an mp3, go nuts
