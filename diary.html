@@ -76,6 +76,7 @@
                                                    });
                                 
                                 $("#mostrecent").click(function () {
+                                                       alert("in here:");
                                                        mostRecent = true;
                                                        showDiary();
                                                     });
@@ -121,7 +122,7 @@
                         
                         function showDiary(){
                                                       var storage = window.localStorage;
-                            
+                            alert("inside show diary");
                             //get date from dojo object
                             
                             window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccessB, fail);
@@ -146,9 +147,10 @@
                          
                              newDate = selDat;
                             
-                       
+                            alert("inside reader success 2");
                             var div = document.getElementById("resultsForFood");
                               div.innerHTML = '';
+                            var latestPicObj;
                             var latest = 0;
                             for (i=0; i<entries.length; i++) {
                                 // Assuming everything in the Music directory is an mp3, go nuts
@@ -156,8 +158,8 @@
                                 if(mostRecent){
                                     alert("in most recent code path");
                                     if(entries[i].name.split("2013")[1].split(".")[0]> latest){
-                                        alert("found a more recent photo");
-                                        latest = entries[i];
+                                        alert("found a more recent photo:"+latest);
+                                        latestPicObj = entries[i];
                                         if(i == entries.length -1){
                                             alert("on our last photo so we now know the latest :)");
                                             var reader = new FileReader();
@@ -174,7 +176,7 @@
                                                 div.appendChild(img);
                                                 
                                             };
-                                            reader.readAsText(latest);
+                                            reader.readAsText(latestPicObj);
                                             
 
                                         }
