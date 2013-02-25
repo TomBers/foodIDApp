@@ -145,7 +145,7 @@
                             for (i=0; i<entries.length; i++) {
                                 // Assuming everything in the Music directory is an mp3, go nuts
                                 // otherwise check entries[i].name to see if it ends with .mp3
-                                 alert("in here:"+entries[i].name);
+                               //  alert("in here:"+entries[i].name);
                                 if(entries[i].name.indexOf(newDate) !== -1){
                                     //this is found ;)
                                     alert("in here:"+entries[i].name);
@@ -154,12 +154,12 @@
                                     reader.onloadend = function(evt) {
                                         console.log("Read as text");
                                         
-                                        
+                                        alert("making a new image object now");
                                         var img = new Image();
                                         img.src = "data:image/jpeg;base64,"+evt.target.result;
                                         img.height=200;
                                         img.width=200;
-                                        
+                                        alert("appending child now");
                                         div.appendChild(img);
                                         
                                     };
