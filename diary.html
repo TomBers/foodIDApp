@@ -26,7 +26,7 @@
                         <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="dinnerb" class="buttons" value="dinner">
                             Dinner
                         </a>
-                <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="mostrecent" class="buttons" value="mostrecent">
+                <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="mostrecent" class="buttons" value="mostrecentb">
                     Most Recent
                 </a>
                         <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="resultb" class="buttons" value="result">
@@ -154,10 +154,12 @@
                                 // Assuming everything in the Music directory is an mp3, go nuts
                                 // otherwise check entries[i].name to see if it ends with .mp3
                                 if(mostRecent){
-                                    
+                                    alert("in most recent code path");
                                     if(entries[i].name.split("2013")[1].split(".")[0]> latest){
+                                        alert("found a more recent photo");
                                         latest = entries[i];
                                         if(i == entries.length -1){
+                                            alert("on our last photo so we now know the latest :)");
                                             var reader = new FileReader();
                                             
                                             reader.onloadend = function(evt) {
