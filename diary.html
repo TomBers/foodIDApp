@@ -169,12 +169,12 @@
                                             reader.onloadend = function(evt) {
                                                 console.log("Read as text");
                                                 
-                                                alert("making a new image object now");
+                                                
                                                 var img = new Image();
                                                 img.src = "data:image/jpeg;base64,"+evt.target.result;
                                                 img.height=200;
                                                 img.width=200;
-                                                alert("appending child now");
+                                                
                                                 div.appendChild(img);
                                                 
                                             };
