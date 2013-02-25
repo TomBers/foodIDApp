@@ -137,17 +137,17 @@
                         function readerSuccess2(entries) {
                             
                             // day.toString() +month.toString() + year.toString()+ value+".fooddiary";
-                            alert("seldat is :"+selDat);
+                         
                              newDate = selDat;
                             
-                            alert("new date is"+newDate);
+                       
                             var div = document.getElementById("resultsForFood");
                               div.innerHTML = '';
                             
                             for (i=0; i<entries.length; i++) {
                                 // Assuming everything in the Music directory is an mp3, go nuts
                                 // otherwise check entries[i].name to see if it ends with .mp3
-                        //         alert("in here:"+entries[i].name);
+                                 alert("in here:"+entries[i].name);
                                 if(entries[i].name.indexOf(newDate) !== -1){
                                     //this is found ;)
                                   alert("in here:"+entries[i].name);
