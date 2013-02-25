@@ -83,6 +83,13 @@
                                             
                                             var day = pts[1];
                                             var month = pts[0];
+                                            
+                                            if(month.length == 2){
+                                            
+                                            month = month.substring(1,2);
+                                            alert("new month is:"+month);
+                                            }
+                                            
                                             var year = pts[2];
                                             //alert("Day : " + day + " Month : " + month + " Year : " + year );
                                             $("#datPick").hide();
