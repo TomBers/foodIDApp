@@ -85,7 +85,7 @@
                                             
                                             var day = pts[1];
                                             var month = pts[0];
-                                            
+                                            month --;
                                             if(month.length == 2){
                                             
                                             month = month.substring(1,2);
@@ -111,8 +111,7 @@
                         
                         
                         function showDiary(){
-                            alert("inside show diary");
-                            var storage = window.localStorage;
+                                                      var storage = window.localStorage;
                             
                             //get date from dojo object
                             
@@ -121,14 +120,12 @@
                         }
                         
                         function onFileSystemSuccessB(fileSystem) {
-                            alert("inside onfilesystemsuccessb");
-                            fileSystem.root.getDirectory("FoodDiary", {create: true, exclusive: false}, getDirSuccess3, fail);
+                                                     fileSystem.root.getDirectory("FoodDiary", {create: true, exclusive: false}, getDirSuccess3, fail);
                         }
                         
                         function getDirSuccess3(dirEntry) {
                             // Get a directory reader
-                            alert("getdirsuccess3");
-                            var directoryReader = dirEntry.createReader();
+                                                    var directoryReader = dirEntry.createReader();
                             
                             // Get a list of all the entries in the directory
                             directoryReader.readEntries(readerSuccess2,fail);
