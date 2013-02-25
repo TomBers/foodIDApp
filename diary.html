@@ -99,7 +99,7 @@
                                             if(month.length == 2){
                                             
                                             month = month.substring(1,2);
-                                            alert("new month is:"+month);
+                                          
                                             }
                                             
                                             var year = pts[2];
@@ -159,13 +159,12 @@
                                 // Assuming everything in the Music directory is an mp3, go nuts
                                 // otherwise check entries[i].name to see if it ends with .mp3
                                 if(mostRecent){
-                                    alert("in most recent code path");
+                                   
                                     if(entries[i].name.split("2013")[1].split(".")[0]> latest){
-                                        alert("found a more recent photo:"+latest);
+                                       
                                         latestPicObj = entries[i];
                                         if(i == entries.length -1){
-                                            alert("on our last photo so we now know the latest :)");
-                                            var reader = new FileReader();
+                                                                                        var reader = new FileReader();
                                             
                                             reader.onloadend = function(evt) {
                                                 console.log("Read as text");
@@ -196,12 +195,11 @@
                                     reader.onloadend = function(evt) {
                                         console.log("Read as text");
                                         
-                                        alert("making a new image object now");
+                                        
                                         var img = new Image();
                                         img.src = "data:image/jpeg;base64,"+evt.target.result;
                                         img.height=200;
                                         img.width=200;
-                                        alert("appending child now");
                                         div.appendChild(img);
                                         
                                     };
