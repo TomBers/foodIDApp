@@ -91,7 +91,7 @@
                                             // showPics(day,month,year);
                                             selDat = day+month+year;
 //                                            alert(selDat);
-                                            //                                showDiary();
+                                            showDiary();
                                             });
                         
                         function showPics(day,month,year){
@@ -102,6 +102,7 @@
                         
                         
                         function showDiary(){
+                            alert("inside show diary");
                             var storage = window.localStorage;
                             
                             //get date from dojo object
@@ -111,11 +112,13 @@
                         }
                         
                         function onFileSystemSuccessB(fileSystem) {
+                            alert("inside onfilesystemsuccessb");
                             fileSystem.root.getDirectory("FoodDiary", {create: true, exclusive: false}, getDirSuccess3, fail);
                         }
                         
                         function getDirSuccess3(dirEntry) {
                             // Get a directory reader
+                            alert("getdirsuccess3");
                             var directoryReader = dirEntry.createReader();
                             
                             // Get a list of all the entries in the directory
@@ -125,7 +128,7 @@
                         function readerSuccess2(entries) {
                             
                             // day.toString() +month.toString() + year.toString()+ value+".fooddiary";
-                            newDate = selDat;
+                            var newDate = selDat;
                             
                             alert(newDate);
                             var div = document.getElementById("MealGallery");
