@@ -141,6 +141,8 @@
                             alert(newDate);
                             var div = document.getElementById("MealGallery");
                             //                            div.innerHTML = '';
+                            if(div==null)alert("meal gallery div not found");
+                            else{ alert("meal gallery div found");}
                             
                             for (i=0; i<entries.length; i++) {
                                 // Assuming everything in the Music directory is an mp3, go nuts
