@@ -29,11 +29,17 @@
                 <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="mostrecent" class="buttons" value="mostrecentb">
                     Most Recent
                 </a>
+                       
+                    <div id="resultsForFood"></div>
+                
+                    <div id="resultsButton" hidden ="true">
                         <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="resultb" class="buttons" value="result">
                             Results
                         </a>
-           
-                    <div id="resultsForFood"></div>
+                    </div>
+                
+                <div id="resultsImage" hidden ="true">
+                    <img src="img/results.jpg" alt="image">                    </div>
                 <!--
                 <div id="breakfast" style="position: static; display:none;">
                     <img src="img/001.jpg" alt="image">
@@ -51,8 +57,8 @@
                     <img src="img/results.png" alt="image">
                         </div>
             -->
-                
-                    </div>
+                </div>
+                    
     
         
                             <script>
@@ -61,30 +67,20 @@
                                 var mostRecent = false;
                              
                          
-                                $("#breakfastb").click(function () {
-                                                $('.buttons').hide();
-                                                       $('#breakfast').show();
-                                                });
-//
-                                $("#lunchb").click(function () {
-                                                       $('.buttons').hide();
-                                                       $('#lunch').show();
-                                                       });
-                                $("#dinnerb").click(function () {
-                                                   $('.buttons').hide();
-                                                   $('#dinner').show();
-                                                   });
+                        
                                 
                                 $("#mostrecent").click(function () {
                                                       
                                                        mostRecent = true;
                                                        showDiary();
+                                                       $("#resultsButton").show(600);
                                                     });
 
                                 
                                 $("#resultb").click(function () {
-                                                   $('.buttons').hide();
-                                                   $('#result').show();
+                                                   $('#resultsForFood').hide();
+                                                    $('#resultsButton').hide();
+                                                   $('#resultsImage').show();
                                                    });
                                 
                                 
@@ -176,14 +172,17 @@
                                                 img.width=200;
                                                 
                                                 div.appendChild(img);
-                                                
+                                        
+                                
                                             };
                                             reader.readAsText(latestPicObj);
                                             
 
                                         }
                                     }
-                                                                        
+        
+                                    
+                                    
                                 }else{
                                     
                                     
@@ -201,6 +200,7 @@
                                         img.height=200;
                                         img.width=200;
                                         div.appendChild(img);
+//                                        div.show();
                                         
                                     };
                                     reader.readAsText(entries[i]);
