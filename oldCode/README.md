@@ -1,4 +1,0 @@
-foodIDApp
-=========
-
-foodIDApp

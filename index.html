@@ -117,7 +117,7 @@
                 var year = new Date().getFullYear();
                 
                 var name = hour.toString() + "_"+ day.toString() + "_" + month.toString() + "_" + year.toString() + "_" + value+".fooddiary";
-                alert("Taken Photo " + name);
+//                alert("Taken Photo " + name);
                 
                 dirEntry.getFile(name, {create: true, exclusive: false}, gotFileEntry, fail);
                 

@@ -69,50 +69,49 @@
                                 
                                 
                                 
-                        $("#analyse").click(function () {
-                                            var date = $('#datepicker').datepicker({ dateFormat: 'yy-mm-dd' }).val();
-                                            if(date == null){
-                                            
-                                            
-                                            }
-                                            var pts=date.split("/");
-                                            
-                                            var day = pts[1];
-                                            var month = pts[0];
-                                            month --;
-                                            if(month.length == 2){
-                                            
-                                            month = month.substring(1,2);
-                                          
-                                            }
-                                            
-                                            var year = pts[2];
-                                            
-                                            
-//                                          alert("Day : " + day + " Month : " + month + " Year : " + year );
-                                            $("#datPick").hide();
-                                            $("#MealGallery").show();
-                                            
-
-                                            selDat = day+month+year;
-                                    
-                                            });
+                                $("#analyse").click(function () {
+                                                    var date = $('#datepicker').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+                                                    if(date == null){
+                                                    
+                                                    
+                                                    }
+                                                    var pts=date.split("/");
+                                                    
+                                                    var day = pts[1];
+                                                    var month = pts[0];
+                                                    month --;
+                                                    if(month.length == 2){
+                                                    
+                                                    month = month.substring(1,2);
+                                                    
+                                                    }
+                                                    
+                                                    var year = pts[2];
+                                                    
+                                                    
+                                                    //alert("Day : " + day + " Month : " + month + " Year : " + year );
+                                                    $("#datPick").hide();
+                                                    $("#MealGallery").show();
+                                                    
+                                                    
+                                                    selDat = day+month+year;
+                                                    
+                                                    });
                     
                         
                         
                                 function showDiary(){
                                     var storage = window.localStorage;
-                                    //get date from dojo object
                                     
-                                    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, fail);
+                                    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemReadSuccess, fail);
                                     
                                 }
                                 
-                                function onFileSystemSuccess(fileSystem) {
-                                    fileSystem.root.getDirectory("FoodDiary", {create: true, exclusive: false}, getDirSuccess, fail);
+                                function onFileSystemReadSuccess(fileSystem) {
+                                    fileSystem.root.getDirectory("FoodDiary", {create: true, exclusive: false}, getDirReadSuccess, fail);
                                 }
                                 
-                                function getDirSuccess(dirEntry) {
+                                function getDirReadSuccess(dirEntry) {
                                     // Get a directory reader
                                     var directoryReader = dirEntry.createReader();
                                     // Get a list of all the entries in the directory
@@ -122,130 +121,59 @@
                                 }
                                 
                                 function showLastImage(entries){
-                                    var div = document.getElementById("resultsForFood");
-                                    div.innerHTML = '';
                                     
-                                    if(entries.length > 1) var mostRecent = entries[0];
-                                    
-                                    alert("MostRecent " + mostRecent.name);
-                                    var mstRecent = mostRecent.name.split("_");
-                                    
-                                    var today=new Date();
-                                    
-                                    
-                                    alert("Year " + mstRecent[3] + " Month " + mstRecent[2]);
-                                    var dt = new Date(mstRecent[3], mstRecent[2], mstRecent[1], mstRecent[0]);
-                                    
-                                    var diff = today - dt;
-                                    alert("Diff " + diff);
-                                    
-                                    
-//                                    for (i=0; i<entries.length; i++) {
-//                                        alert("Img " + i + " : " + entries[i].name);
-//                                        
-//                                        var mstRecent = mostRecent.name.split("_");
-//                                        var current = entries[i].name.split("_");
-//                                        
-////                                        The file name goes hr_day_month_year_value
-//                                        
-//                                        if(current[3] > mstRecent[3] &&
-//                                           current[2] > mstRecent[2] &&
-//                                           current[1] > mstRecent[1] &&
-//                                           current[3] > mstRecent[3] &&
-//                                        
-//                                        
-//                                    }
-                                    
-                                    
-                                    
-                                }
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                function readerSuccess(entries) {
-                                    
-                                    // day.toString() +month.toString() + year.toString()+ value+".fooddiary";
-                                    
-                                    newDate = selDat;
-                                    alert("Selected Date" + selDat);
-                                    
-//                                    alert("Showing Image " + evt.target.result);
-                                    
-                                    var div = document.getElementById("resultsForFood");
-                                    div.innerHTML = '';
-                                    if(entries.length > 1) var latestPicObj = entries[0];
-                                    var latest = 0;
                                     var reader = new FileReader();
-                                    for (i=0; i<entries.length; i++) {
-                                        
-                                        if(mostRecent){
+                                    var div = document.getElementById("resultsForFood");
+                                    
+                                    if(entries.length > 1) {
+                                    
+                                        var mostRecent = entries[0];
+                                    
+                                        var mstRecent = mostRecent.name.split("_");
+                                        var today=new Date();
+                                        var dt = new Date(mstRecent[3], mstRecent[2], mstRecent[1], mstRecent[0]);
+                                        var diff = today - dt;
+
+                                    
+                                        for (i = 0; i<entries.length; i++) {
                                             
-                                            last = 0;
-                                            latestPicObj = entries[last];
-//                                            alert("Current image " + entries[i].name);
-//                                            
-//                                            var testedDate = entries[i].name.split("_");
-//                                            var mostRec = latestPicObj.split("_");
-//                                            
-////                                            The file name goes hr_day_month_year_value
-//                                            
-//                                            if(testedDate[3] > mostRec[3] &&
-//                                               testedDate[2] > mostRec[2] &&
-//                                               testedDate[1] > mostRec[1] &&
-//                                               testedDate[0] > mostRec[0]){
-//                                            
-////                                            if(entries[i].name.split("2013")[1].split(".")[0]> latest){
-//                                            
-//                                                latestPicObj = entries[i];
-                                        
+                                            tstDat = entries[i].name.split("_");
+                                            //
+                                            tmpDate = new Date(tstDat[3], tstDat[2], tstDat[1], tstDat[0]);
+                                            //
+                                            tstDiff = today - tmpDate;
                                             
-//                                            if(i == entries.length -1){
-                                                    
-                                                    
-                                                    reader.onloadend = function(evt) {
-                                                        console.log("Read as text");
-                                                        
-//                                                        alert("displaying image" + evt.target.result);
-                                                        
-                                                        var img = new Image();
-                                                        img.src = "data:image/jpeg;base64,"+evt.target.result;
-                                                        img.height=200;
-                                                        img.width=200;
-                                                        div.appendChild(img);
-                                                    };
-                                                        reader.readAsText(entries[i]);
-                                                
-//                                            }
-                                            
-                                        }else{
+//                                            alert("tstDiff " + tstDiff + " ,oldDiff " + diff);
                                             
                                             
-                                            
-                                            if(entries[i].name.indexOf(newDate) !== -1){
-                                                //this is found ;)
-                                                var reader = new FileReader();
-                                                
-                                                reader.onloadend = function(evt) {
-                                                    console.log("Read as text");
-                                                    
-                                                    
-                                                    var img = new Image();
-                                                    img.src = "data:image/jpeg;base64,"+evt.target.result;
-                                                    img.height=200;
-                                                    img.width=200;
-                                                    div.appendChild(img);
-                                                    //                                        div.show();
-                                                    
-                                                };
-                                                reader.readAsText(entries[i]);
+                                            if(tstDiff <= diff){
+                                                mostRecent = entries[i];
+                                                diff = tstDiff;
                                             }
                                         }
+
+                                        
+                                        
+                                    
+                                        
+                                    
+                                    reader.onloadend = function(evt) {
+                                        console.log("Read as text");
+                                        
+                                        
+                                        var img = new Image();
+                                        img.src = "data:image/jpeg;base64,"+evt.target.result;
+                                        img.height=200;
+                                        img.width=200;
+                                        div.appendChild(img);
+                                        
+                                    };
+                                    reader.readAsText(mostRecent);
+                                    
                                     }
+                                    
                                 }
+                                
                                 
                         
                         </script>
