@@ -247,7 +247,7 @@
                                                 
                                                 todayTstDat = todaysImages[j].name.split("_");
                                                 tmpTodayDate = new Date(todayTstDat[3], todayTstDat[2], todayTstDat[1], todayTstDat[0]);
-                                                alert("todayImage " + todaysImages[j].name + ", Hours : " + tmpTodayDate.getHours());
+                                                
                                                 
                                                 
                                                 switch(MEAL){
@@ -257,12 +257,17 @@
                                                         break;
                                                     
                                                     case LUNCH :
-                                                        if(tmpTodayDate.getHours() == 15) imagesToShow.push(todaysImages[j]);
+                                                    if(tmpTodayDate.getHours() > 11 && tmpTodayDate.getHours() <= 16){
+                                                        alert("Lunch condition met");
+                                                        alert("todayImage " + todaysImages[j].name + ", Hours : " + tmpTodayDate.getHours());
+                                                        imagesToShow.push(todaysImages[j]);
+                                                    }
                                                         break;
                                                     
                                                     case DINNER : 
-                                                        //if(tmpTodayDate.getHours() > 16)
+                                                    if(tmpTodayDate.getHours() > 16){
                                                         imagesToShow.push(todaysImages[j]);
+                                                    }
                                                         break;
                                                 }
                                                 
