@@ -11,7 +11,7 @@
                 <input type="date" id="datepicker" hidden="true"/>
                 <br>
                 <br>
-                <a data-role="button" data-theme="d" href="" data-icon="check" data-iconpos="right" id="analyse">Analyse</a>
+                <a data-role="button" data-theme="d" href="" data-icon="check" data-iconpos="right" id="analyse">Breakdown</a>
             </div>
             
             <div id="MealGallery" data-role="content" hidden="true">
@@ -47,18 +47,47 @@
         
                             <script>
                         
-                        var selDat;
-                                var mostRecent = false;
+                                var selDat;
+                                var MEAL;
+                                var MOSTRECENT = 0;
+                                var BREAKFAST = 1;
+                                var LUNCH = 2;
+                                var DINNER = 3;
+                                
+                                
                              
                          
                         
                                 
                                 $("#mostrecentb").click(function () {
                                                       
-                                                       mostRecent = true;
-                                                       showDiary();
+                                                      
+                                                       showDiary(MOSTRECENT);
                                                        $("#resultsButton").show(600);
                                                     });
+                                
+                                $("#lunchb").click(function () {
+                                                        
+                                                        
+                                                        showDiary(LUNCH);
+                                                        $("#resultsButton").show(600);
+                                                        });
+                                
+                                $("#dinnerb").click(function () {
+                                                       
+                                                       
+                                                       showDiary(DINNER);
+                                                       $("#resultsButton").show(600);
+                                                       });
+                                
+                                $("#breakfastb").click(function () {
+                                                       
+                                                       
+                                                       showDiary(BREAKFAST);
+                                                       $("#resultsButton").show(600);
+                                                       });
+                                
+                                
 
                                 
                                 $("#resultb").click(function () {
@@ -94,15 +123,16 @@
                                                     $("#MealGallery").show();
                                                     
                                                     
-                                                    selDat = day+month+year;
+                                                    //selDat = day+month+year;
+                                                    selDat = new Date(year,month,day);
                                                     
                                                     });
                     
                         
                         
-                                function showDiary(){
+                                function showDiary(usrOption){
                                     var storage = window.localStorage;
-                                    
+                                     MEAL = usrOption;
                                     window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemReadSuccess, fail);
                                     
                                 }
@@ -115,64 +145,150 @@
                                     // Get a directory reader
                                     var directoryReader = dirEntry.createReader();
                                     // Get a list of all the entries in the directory
-                                    directoryReader.readEntries(showLastImage,fail);
+                                    directoryReader.readEntries(showImages,fail);
                                     // Get a list of all the entries in the directory
                                     
                                 }
                                 
-                                function showLastImage(entries){
+                                function showImages(entries){
+                                    
+                                    if(isNaN(selDat)) selDat = new Date();
+                                    
+                                    var div = document.getElementById("resultsForFood");
+                                    $('#resultsForFood').empty();
+                                    
                                     
                                     var reader = new FileReader();
-                                    var div = document.getElementById("resultsForFood");
                                     
-                                    if(entries.length > 1) {
                                     
-                                        var mostRecent = entries[0];
-                                    
-                                        var mstRecent = mostRecent.name.split("_");
-                                        var today=new Date();
-                                        var dt = new Date(mstRecent[3], mstRecent[2], mstRecent[1], mstRecent[0]);
-                                        var diff = today - dt;
-
-                                    
-                                        for (i = 0; i<entries.length; i++) {
+                                    if(MEAL == MOSTRECENT){
+                                        
+                                        
+                                        
+                                        if(entries.length > 1) {
                                             
-                                            tstDat = entries[i].name.split("_");
-                                            //
-                                            tmpDate = new Date(tstDat[3], tstDat[2], tstDat[1], tstDat[0]);
-                                            //
-                                            tstDiff = today - tmpDate;
+                                            var mostRecent = entries[0];
                                             
-//                                            alert("tstDiff " + tstDiff + " ,oldDiff " + diff);
+                                            var mstRecent = mostRecent.name.split("_");
+                                            var today=new Date();
+                                            var dt = new Date(mstRecent[3], mstRecent[2], mstRecent[1], mstRecent[0]);
+                                            var diff = today - dt;
                                             
                                             
-                                            if(tstDiff <= diff){
-                                                mostRecent = entries[i];
-                                                diff = tstDiff;
+                                            for (i = 0; i<entries.length; i++) {
+                                                
+                                                tstDat = entries[i].name.split("_");
+                                                //
+                                                tmpDate = new Date(tstDat[3], tstDat[2], tstDat[1], tstDat[0]);
+                                                //
+                                                tstDiff = today - tmpDate;
+                                                
+                                                //                                            alert("tstDiff " + tstDiff + " ,oldDiff " + diff);
+                                                
+                                                
+                                                if(tstDiff <= diff){
+                                                    mostRecent = entries[i];
+                                                    diff = tstDiff;
+                                                }
                                             }
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            reader.onloadend = function(evt) {
+                                                console.log("Read as text");
+                                                
+                                                
+                                                var img = new Image();
+                                                img.src = "data:image/jpeg;base64,"+evt.target.result;
+                                                img.height=200;
+                                                img.width=200;
+                                                div.appendChild(img);
+                                                
+                                            };
+                                            reader.readAsText(mostRecent);
+                                            
                                         }
-
                                         
-                                        
-                                    
-                                        
-                                    
-                                    reader.onloadend = function(evt) {
-                                        console.log("Read as text");
-                                        
-                                        
-                                        var img = new Image();
-                                        img.src = "data:image/jpeg;base64,"+evt.target.result;
-                                        img.height=200;
-                                        img.width=200;
-                                        div.appendChild(img);
-                                        
-                                    };
-                                    reader.readAsText(mostRecent);
-                                    
                                     }
-                                    
+                                    else {
+                                        
+//                                        alert("Either breakfast, lunch or dinner");
+                                        
+                                        if(entries.length > 1) {
+                                            
+                                            //                                            Get all of todays images
+                                            var todaysImages = [];
+                                            for (i = 0; i<entries.length; i++) {
+                                                
+                                                //                                                alert("entres : " + i + " , " + entries[i].name);
+                                                tstDat = entries[i].name.split("_");
+                                                tmpDate = new Date(tstDat[3], tstDat[2], tstDat[1], tstDat[0]);
+                                                
+                                                
+                                                if( tmpDate.getFullYear() == selDat.getFullYear() &&
+                                                   tmpDate.getMonth() == selDat.getMonth() &&
+                                                   tmpDate.getDate() == selDat.getDate() ){
+                                                    
+                                                    todaysImages.push(entries[i]);
+                                                }
+                                                
+                                                
+                                                
+                                            }
+//                                            alert("No images today : " + todaysImages.length);
+                                            
+                                            var imagesToShow = [];
+                                            
+//                                            alert("MEAL" + MEAL);
+                                            for(j = 0; j < todaysImages.length; j++){
+                                                
+                                                todayTstDat = todaysImages[j].name.split("_");
+                                                tmpTodayDate = new Date(todayTstDat[3], todayTstDat[2], todayTstDat[1], todayTstDat[0]);
+                                                alert("todayImage " + todaysImages[j].name + ", Hours : " + tmpTodayDate.getHours());
+                                                
+                                                
+                                                switch(MEAL){
+                                                    
+                                                    case BREAKFAST :
+                                                        if(tmpTodayDate.getHours() <= 11) imagesToShow.push(todaysImages[j]);
+                                                        break;
+                                                    
+                                                    case LUNCH :
+                                                        if(tmpTodayDate.getHours() == 15) imagesToShow.push(todaysImages[j]);
+                                                        break;
+                                                    
+                                                    case DINNER : 
+                                                        //if(tmpTodayDate.getHours() > 16)
+                                                        imagesToShow.push(todaysImages[j]);
+                                                        break;
+                                                }
+                                                
+                                                
+                                            }
+                                            
+                                            reader.onloadend = function(evt) {
+                                                console.log("Read as text");
+                                                
+                                                
+                                                var img = new Image();
+                                                img.src = "data:image/jpeg;base64,"+evt.target.result;
+                                                img.height=200;
+                                                img.width=200;
+                                                div.appendChild(img);
+                                                
+                                            };
+                                            
+                                            for(k = 0; k < imagesToShow.length; k++) reader.readAsText(imagesToShow[k]);
+                                            
+                                        }
+                                    }
                                 }
+                                
+                                    
+                        
                                 
                                 
                         
