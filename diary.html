@@ -272,22 +272,33 @@
                                                 }
                                                 
                                                 
+                                                
                                             }
-                                            
-                                            reader.onloadend = function(evt) {
-                                                console.log("Read as text");
+                                                                                        
+                                            var readers = [];
+                                            alert("Images for selected time " + imagesToShow.length);
+                                            for(k = 0; k < imagesToShow.length; k++){
+                                                
+                                                readers.push(new FileReader());
+                                                
+                                                readers[k].onloadend = function(evt) {
+                                                    console.log("Read as text");
+                                                    
+                                                    
+                                                    var img = new Image();
+                                                    img.src = "data:image/jpeg;base64,"+evt.target.result;
+                                                    img.height=200;
+                                                    img.width=200;
+                                                    div.appendChild(img);
+                                                                                                       
+                                                };
+
                                                 
                                                 
-                                                var img = new Image();
-                                                img.src = "data:image/jpeg;base64,"+evt.target.result;
-                                                img.height=200;
-                                                img.width=200;
-                                                div.appendChild(img);
-                                                
-                                            };
-                                            
-                                            for(k = 0; k < imagesToShow.length; k++) reader.readAsText(imagesToShow[k]);
-                                            
+//                                                alert("Img " + imagesToShow[k].name);
+                                                readers[k].readAsText(imagesToShow[k]);
+//                                                reader.readAsText(imagesToShow[1]);
+                                            }
                                         }
                                     }
                                 }
