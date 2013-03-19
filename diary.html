@@ -26,10 +26,14 @@
                         <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="dinnerb" class="buttons" value="dinner">
                             Dinner
                         </a>
-                <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="mostrecentb" class="buttons" value="mostrecent">
-                    Most Recent
-                </a>
-                       
+                        <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="mostrecentb" class="buttons" value="mostrecent">
+                            Most Recent
+                        </a>
+                
+                        <a data-role="button" href="" data-icon="arrow-r" data-iconpos="right" id="postimgsb" class="buttons" value="postImgs">
+                            Post Images
+                        </a>
+                
                     <div id="resultsForFood"></div>
                 
                     <div id="resultsButton" hidden ="true">
@@ -53,6 +57,7 @@
                                 var BREAKFAST = 1;
                                 var LUNCH = 2;
                                 var DINNER = 3;
+                                var POSTIMGS = 4;
                                 
                                 
                              
@@ -85,6 +90,11 @@
                                                        
                                                        showDiary(BREAKFAST);
                                                        $("#resultsButton").show(600);
+                                                       });
+                                
+                                $("#postimgsb").click(function () {
+                                                       showDiary(POSTIMGS);
+                                                      
                                                        });
                                 
                                 
@@ -163,8 +173,6 @@
                                     
                                     if(MEAL == MOSTRECENT){
                                         
-                                        
-                                        
                                         if(entries.length > 1) {
                                             
                                             var mostRecent = entries[0];
@@ -191,9 +199,6 @@
                                                     diff = tstDiff;
                                                 }
                                             }
-                                            
-                                            
-                                            
                                             
                                             
                                             
@@ -238,45 +243,81 @@
                                                 
                                                 
                                             }
-//                                            alert("No images today : " + todaysImages.length);
                                             
-                                            var imagesToShow = [];
+                                            if(MEAL == POSTIMGS){
+                                                alert("Posting images");
+                                                var imageURI= todaysImages[0].toURI();
+                                                var options = new FileUploadOptions();
+                                                options.fileKey="file";
+                                                options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
+                                                options.mimeType="image/jpeg";
+                                                
+                                                var params = new Object();
+                                                params.value1 = "test";
+                                                params.value2 = "param";
+                                                
+                                                options.params = params;
+                                                
+                                                var ft = new FileTransfer();
+                                                ft.upload(imageURI, "http://humanspace.org.uk/IG/upload.php", win, fail, options);
                                             
-//                                            alert("MEAL" + MEAL);
-                                            for(j = 0; j < todaysImages.length; j++){
+                                            
+                                            function win(r) {
+                                                console.log("Code = " + r.responseCode);
+                                                console.log("Response = " + r.response);
+                                                console.log("Sent = " + r.bytesSent);
+                                            }
+                                            
+                                            function fail(error) {
+                                                alert("An error has occurred: Code = " = error.code);
+                                            }
+                                            
+                                            
+                                            }
+                                            
+                                            else{
+                                                //                                            alert("No images today : " + todaysImages.length);
                                                 
-                                                todayTstDat = todaysImages[j].name.split("_");
-                                                tmpTodayDate = new Date(todayTstDat[3], todayTstDat[2], todayTstDat[1], todayTstDat[0]);
+                                                var imagesToShow = [];
                                                 
-                                                
-                                                
-                                                switch(MEAL){
+                                                //                                            alert("MEAL" + MEAL);
+                                                for(j = 0; j < todaysImages.length; j++){
                                                     
-                                                    case BREAKFAST :
+                                                    todayTstDat = todaysImages[j].name.split("_");
+                                                    tmpTodayDate = new Date(todayTstDat[3], todayTstDat[2], todayTstDat[1], todayTstDat[0]);
+                                                    
+                                                    
+                                                    
+                                                    switch(MEAL){
+                                                        
+                                                        case BREAKFAST :
                                                         if(tmpTodayDate.getHours() <= 11) imagesToShow.push(todaysImages[j]);
                                                         break;
-                                                    
-                                                    case LUNCH :
-                                                    if(tmpTodayDate.getHours() > 11 && tmpTodayDate.getHours() <= 16){
-                                                        alert("Lunch condition met");
-                                                        alert("todayImage " + todaysImages[j].name + ", Hours : " + tmpTodayDate.getHours());
-                                                        imagesToShow.push(todaysImages[j]);
-                                                    }
+                                                        
+                                                        case LUNCH :
+                                                        if(tmpTodayDate.getHours() > 11 && tmpTodayDate.getHours() <= 16){
+                                                            alert("Lunch condition met");
+                                                            alert("todayImage " + todaysImages[j].name + ", Hours : " + tmpTodayDate.getHours());
+                                                            imagesToShow.push(todaysImages[j]);
+                                                        }
                                                         break;
-                                                    
-                                                    case DINNER : 
-                                                    if(tmpTodayDate.getHours() > 16){
-                                                        imagesToShow.push(todaysImages[j]);
-                                                    }
+                                                        
+                                                        case DINNER :
+                                                        if(tmpTodayDate.getHours() > 16){
+                                                            imagesToShow.push(todaysImages[j]);
+                                                        }
                                                         break;
+                                                        
+                                                        
+                                                    }
+                                                    
+                                                    
+                                                    
+                                                    
                                                 }
-                                                
-                                                
-                                                
-                                            }
                                                                                         
                                             var readers = [];
-                                            alert("Images for selected time " + imagesToShow.length);
+//                                            alert("Images for selected time " + imagesToShow.length);
                                             for(k = 0; k < imagesToShow.length; k++){
                                                 
                                                 readers.push(new FileReader());
@@ -299,6 +340,8 @@
                                                 readers[k].readAsText(imagesToShow[k]);
 //                                                reader.readAsText(imagesToShow[1]);
                                             }
+                                        }
+                                        
                                         }
                                     }
                                 }
