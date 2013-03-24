@@ -1,211 +1,115 @@
 <!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <title>
-        </title>
-       
-    
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
         <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+        
+        <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/datepicker.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+        
+                       
+              
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+           
+            </script>
+        
        
-        <link rel="stylesheet" href="css/jquery.ui.datepicker.mobile.css" />
-        <script src="js/jQuery.ui.datepicker.js"></script>
-        <script src="js/jquery.ui.datepicker.mobile.js"></script>
-        
-         <link rel="stylesheet" href="css/my.css" />
-        <script src="phonegap.js"></script>
-        
-       
-        </script>
-     
-        <script>
-        
-            var pictureSource;   // picture source
-            var destinationType; // sets the format of returned value
-            
-            // Called when a photo is successfully retrieved
-            //
-            var finalImageData;
-            
-            
-            document.addEventListener("deviceready",onDeviceReady,false);
-            
-            // Cordova is ready to be used!
-            //
-            function onDeviceReady() {
-    
-                pictureSource=navigator.camera.PictureSourceType;
-                destinationType=navigator.camera.DestinationType;
-                $.mobile.page.prototype.options.degradeInputs.date = true;
-                
-                tmpDat = new Date();
-//                alert(""+ tmpDat.getMonth());
-                
-            }
-            
-            // A button will call this function
-            //
-            function capturePhoto() {
-                // Take picture using device camera and retrieve image as base64-encoded string
-                navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
-                                            destinationType: destinationType.DATA_URL });
-            }
-            
-            
-            function onPhotoDataSuccess(imageData) {
-                // Uncomment to view the base64 encoded image data
-                // console.log(imageData);
-                finalImageData = imageData;
-                // Get image handle
-                window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, fail);
-            }
-            
-            function onFileSystemSuccess(fileSystem) {
-                fileSystem.root.getDirectory("FoodDiary", {create: true, exclusive: false}, getDirSuccess, fail);
-            }
-            
-            
-            function getDirSuccess(dirEntry) {
-                // Get a directory reader
-                var directoryReader = dirEntry.createReader();
-                // Get a list of all the entries in the directory
-                directoryReader.readEntries(readerSuccess,fail);
-            }
-
-            
-            function readerSuccess(entries) {
-                addPhoto();
-            }
-            
-            
-          
-            
-            function addPhoto(){
-                window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, fail);
-            }
-            
-            function onFileSystemSuccess(fileSystem) {
-                fileSystem.root.getDirectory("FoodDiary", {create: true, exclusive: false}, getDirSuccess, fail);
-            }
-            
-            
-            function getDirSuccess(dirEntry){
-                
-                var value = window.localStorage.getItem("numOfPics");
-                
-                if(value==null){
-                    window.localStorage.setItem("numOfPics", "1");
-                    value = window.localStorage.getItem("numOfPics");
-                }
-                
-                else {
-                    value ++;
-                    window.localStorage.setItem("numOfPics",value);
-                    value = window.localStorage.getItem("numOfPics");
-                }
-                
-                var hour = new Date().getHours();
-                var day = new Date().getDate();
-                var month = new Date().getMonth();
-                
-//                alert("Month " + month);
-                var year = new Date().getFullYear();
-                
-                var name = hour.toString() + "_"+ day.toString() + "_" + month.toString() + "_" + year.toString() + "_" + value+".fooddiary";
-//                alert("Taken Photo " + name);
-                
-                dirEntry.getFile(name, {create: true, exclusive: false}, gotFileEntry, fail);
-                
-                
-            }
-            
-            function gotFileEntry(fileEntry) {
-                fileEntry.createWriter(gotFileWriter, fail);
-            }
-            
-            function gotFileWriter(writer) {
-                writer.onwriteend = function(evt) {
-                    
-                };
-                writer.write(finalImageData);
-                
-            }
-            
-            
-            
-            
-            
-            
-          
-           
-            
-            
-           
-            
-            
-            // Called if something bad happens.
-            //
-            function onFail(message) {
-                alert('Failed because: ' + message);
-            }
-            
-            function fail(error) {
-                alert(error.code);
-                console.log(error.code);
-            }
-            
-            
-            
-            
-            
-           
-            
-
-            
-        </script>
+        <title>FoodID App</title>
     </head>
     <body>
-
-<!-- Home -->
         <div data-role="page" id="page1">
-            <div style="text-align: center;"><H1>FoodID App</H1></div>
+            <div data-role="content">
+                <h2>
+                    FoodID
+                </h2>
+                <a href="javascript:capturePhoto();" id="camera" class="fpButton">
+                    <div style="width: 100%; height: 150px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                        <img id="camera" src="img/camera.png" alt="image"
+                            style="position: absolute; top: 10%; left: 30%; margin-left: 0px; margin-top: 0px">
+                            </div>
+                </a>
+                <a  href="#page2" id="calendarb" class="fpButton">
+                    <div style="width: 100%; height: 150px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                        <img id="calendar" src="img/calendar.png"
+                            alt="image" style="position: absolute; top: 10%; left: 30%; margin-left: 0px; margin-top: 0px">
+                            </div>
+                </a>
+                <a href="#page3" id="results" class="fpButton">
+                    <div style="width: 100%; height: 150px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                        <img id="results" src="img/graph.png" alt="image"
+                            style="position: absolute; top: 10%; left: 30%; margin-left: -0px; margin-top: -0px">
+                            </div>
+                </a>
+            </div>
+        </div>
+        <div data-role="page" id="page2" hidden="true">
+        
+            <a data-role="button" href="#page1" data-icon="arrow-l" data-iconpos="left" id="home" class="buttons" >Back</a>
+            <div id="datepicker"></div>
+            <div id="resultsForFood"></div>
             
-            <br>
+            <div id="analyseDiv" hidden="true">
+            <a data-role="button" href="#" data-icon="arrow-r" data-iconpos="right" id="analyseb" class="buttons"  >Analyse</a>
+                </div>
+            <script>
+                $("#datepicker").click(function () {
+                                       
+                                       var d = $('#datepicker').datepicker('getDate');
+                                       showDiary(ALL,d);
+                                       
+                                       $('#analyseDiv').show();
+                                       
+                                            
+                                       
+                                                
+                                       
+//                                       alert("Clicked Date : " + d);
+                                       });
+                
+                $("#analyseb").click(function () {
+                                    alert('Posting Images for Analysis');
+                                    var sd = $('#datepicker').datepicker('getDate');
+                                    showDiary(POSTIMGS,sd);
+                                    
+                                    
+                                    });
+                </script>
             
-            <a data-role="button" data-theme="d" href="" data-icon="trafficlightRed"
-                data-iconpos="right">
-                Time since last check
-            </a>
-            <a data-role="button" data-theme="d" href="" data-icon="trafficlightYellow" data-iconpos="right">
-                Suggestions from last check
-            </a>
-            <a data-role="button" data-theme="d" href="" data-icon="trafficlightGreen"
-                data-iconpos="right">
-                Progress towards goal
-            </a>
-
-    
-    
-    
-   
-
-    <footer>
-    <div data-role="footer" data-id="foo1" data-position="fixed">
-        <div data-role="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="javascript:capturePhoto();">Camera</a></li>
-                <li><a href="diary.html">Diary</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </div><!-- /navbar -->
-    </div><!-- /footer -->
-    </footer>
-    </div>
-        </body>
+         
+            </div>
+        
+        <div data-role="page" id="page3" hidden="true">
+            <a data-role="button" href="#page1" data-icon="arrow-l" data-iconpos="left" id="home" class="buttons" >Back</a>
+             <img src="img/results.jpg" alt="image">
+            </div>
+        
+    </body>
 </html>
