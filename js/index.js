@@ -332,6 +332,7 @@ function showImages(entries){
                 
                 
                 function win(r) {
+                alert(r.responseCode);
                     console.log("Code = " + r.responseCode);
                     console.log("Response = " + r.response);
                     console.log("Sent = " + r.bytesSent);
