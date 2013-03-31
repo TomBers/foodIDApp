@@ -328,7 +328,7 @@ function showImages(entries){
                 options.params = params;
                 
                 var ft = new FileTransfer();
-                ft.upload(imageURI, "http://humanspace.org.uk/IG/upload.php", win, fail, options);
+                ft.upload(imageURI, "http://ssfoodid.herokuapp.com/upload", win, fail, options);
                 
                 
                 function win(r) {
