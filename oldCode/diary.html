@@ -336,12 +336,23 @@
 
                                                 
                                                 
+<<<<<<< HEAD:oldCode/diary.html
 //                                                alert("Img " + imagesToShow[k].name);
                                                 readers[k].readAsText(imagesToShow[k]);
 //                                                reader.readAsText(imagesToShow[1]);
                                             }
                                         }
                                         
+=======
+                                            };
+                                            
+                                            var fail = function(evt) {
+                                                alert(error.code);
+                                            };
+                                            
+                                            for(k = 0; k < imagesToShow.length; k++) reader.readAsText(imagesToShow[k]);
+                                            
+>>>>>>> change:diary.html
                                         }
                                     }
                                 }
