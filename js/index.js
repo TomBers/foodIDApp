@@ -319,20 +319,26 @@ function showImages(entries){
                 var options = new FileUploadOptions();
                 options.fileKey="file";
                 options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
+                    console.log("File Name : " + options.fileName);
+                    
                 options.mimeType="image/jpeg";
                 
                 var params = new Object();
-                params.value1 = "test";
-                params.value2 = "param";
-                
+                params.value1 = "" + options.fileName;
                 options.params = params;
+                    
+                var headers={'fileName':options.fileName};
+                options.headers = headers;
+                
+                
                 
                 var ft = new FileTransfer();
-                ft.upload(imageURI, "http://humanspace.org.uk/IG/upload.php", win, fail, options);
+                ft.upload(imageURI, "http://ssfoodid.herokuapp.com/upload", win, fail, options);
                 
+                    
+                    
                 
                 function win(r) {
-                alert(r.responseCode);
                     console.log("Code = " + r.responseCode);
                     console.log("Response = " + r.response);
                     console.log("Sent = " + r.bytesSent);
