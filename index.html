@@ -48,7 +48,14 @@
     </head>
     <body>
     
-    <button onclick="login()">Login</button>
+    
+    
+        <div data-role="page" id="page1">
+            <div data-role="content">
+                <h2>
+                    FoodID
+                </h2>
+                <button onclick="login()">Login</button>
 		<button onclick="me()">Me</button>
 		<!--<button onclick="getSession()">Get session</button>-->
 		<button onclick="getLoginStatus()">Get login</button>
@@ -57,12 +64,9 @@
 		<button onclick="publishStoryFriend()">friendstory</button>
         
         <div id="data">loading ...</div>
-    
-        <div data-role="page" id="page1">
-            <div data-role="content">
-                <h2>
-                    FoodID
-                </h2>
+                
+                
+                
                 <a href="javascript:capturePhoto();" id="camera" class="fpButton">
                     <div style="width: 100%; height: 150px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
                         <img id="camera" src="img/camera.png" alt="image"
