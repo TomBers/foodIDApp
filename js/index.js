@@ -428,7 +428,6 @@ function showImages(entries){
 
 //Facebook JS
 
-<script>
             
             if ((typeof cordova == 'undefined') && (typeof Cordova == 'undefined')) alert('Cordova variable does not exist. Check that you have included cordova.js correctly');
             if (typeof CDV == 'undefined') alert('CDV variable does not exist. Check that you have included cdv-plugin-fb-connect.js correctly');
@@ -557,4 +556,4 @@ function showImages(entries){
                                       alert(e);
                                       }
                                       }, false);
-            </script>
+            
