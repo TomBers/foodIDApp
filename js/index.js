@@ -82,7 +82,7 @@ function onDeviceReady() {
     
     tmpDat = new Date();
     //                alert(""+ tmpDat.getMonth());
-    
+    FB.init({ appId: "appid", nativeInterface: CDV.FB, useCachedDialogs: false });
 }
 
 // A button will call this function
