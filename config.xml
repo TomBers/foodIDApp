@@ -35,6 +35,8 @@
 
     <content src="index.html" />
 
+	
+
     <plugins>
         <plugin name="Device" value="CDVDevice" />
         <plugin name="Logger" value="CDVLogger" />
@@ -55,6 +57,9 @@
         <plugin name="Battery" value="CDVBattery" />
         <plugin name="Globalization" value="CDVGlobalization" />
         <plugin name="InAppBrowser" value="CDVInAppBrowser" />
+        <gap:plugin name="FacebookConnect">
+   		<param name="APP_ID" value="133914256793487" />
+ 		</gap:plugin>
     </plugins>
 
     <access origin="*" />
