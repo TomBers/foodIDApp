@@ -324,7 +324,13 @@ function showImages(entries){
                 options.mimeType="image/jpeg";
                 
                 var params = new Object();
+<<<<<<< HEAD
                 params.value1 = "" + options.fileName;
+=======
+                params.value1 = "test";
+                params.value2 = "param";
+              
+>>>>>>> fb updates
                 options.params = params;
                     
                 var headers={'fileName':options.fileName};

@@ -61,6 +61,10 @@
    		<param name="APP_ID" value="133914256793487" />
  		</plugin>
     </plugins>
-
+    
+<gap:plugin name="FacebookConnect">
+   <param name="APP_ID" value="386443318088371" />
+ </gap:plugin>
+ 
     <access origin="*" />
 </cordova>
