@@ -59,9 +59,10 @@
         <plugin name="InAppBrowser" value="CDVInAppBrowser" />
     </plugins>
     
- <gap:plugin name="FacebookConnect">
-            <param name="APP_ID" value="133914256793487" />
-        </gap:plugin>
+
  
     <access origin="*" />
 </cordova>
+ <gap:plugin name="FacebookConnect">
+            <param name="APP_ID" value="133914256793487" />
+        </gap:plugin>
