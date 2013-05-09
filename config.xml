@@ -32,7 +32,7 @@
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="orientation" value="portrait" />
-
+<preference name="phonegap-version" value="2.5.0" />
     <content src="index.html" />
 
 	
