@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by licable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css" />
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/jquery.mobile-1.3.0.min.js"></script>
+        
+        <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/datepicker.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+         <script src="cdv-plugin-fb-connect.js"></script>
+ 		<script src="facebook-js-sdk.js"></script>
+                       
+         <script src="js/cdv-plugin-fb-connect.js"></script>
+         <script src="js/facebook-js-sdk.js"></script>              
+              
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+           
+            </script>
+        <script>
+            
+            if ((typeof cordova == 'undefined') && (typeof Cordova == 'undefined')) alert('Cordova variable does not exist. Check that you have included cordova.js correctly');
+            if (typeof CDV == 'undefined') alert('CDV variable does not exist. Check that you have included cdv-plugin-fb-connect.js correctly');
+            if (typeof FB == 'undefined') alert('FB variable does not exist. Check that you have included the Facebook JS SDK file.');
+            
+            FB.Event.subscribe('auth.login', function(response) {
+                               alert('auth.login event');
+                               });
+            
+            FB.Event.subscribe('auth.logout', function(response) {
+                               alert('auth.logout event');
+                               });
+            
+            FB.Event.subscribe('auth.sessionChange', function(response) {
+                               alert('auth.sessionChange event');
+                               });
+            
+            FB.Event.subscribe('auth.statusChange', function(response) {
+                               alert('auth.statusChange event');
+                               });
+            
+            /*function getSession() {
+                alert("session: " + JSON.stringify(FB.getSession()));
+            }
+            */
+            function getLoginStatus() {
+                FB.getLoginStatus(function(response) {
+                                  if (response.status == 'connected') {
+                                  alert('logged in');
+                                  } else {
+                                  alert('not logged in');
+                                  }
+                                  });
+            }
+            var friendIDs = [];
+			var fdata;
+            function me() {
+                FB.api('/me/friends', { fields: 'id, name, picture' },  function(response) {
+                       if (response.error) {
+                       alert(JSON.stringify(response.error));
+                       } else {
+                       var data = document.getElementById('data');
+					   fdata=response.data;
+					   console.log("fdata: "+fdata);
+                       response.data.forEach(function(item) {
+                                             var d = document.createElement('div');
+                                             d.innerHTML = "<img src="+item.picture+"/>"+item.name;
+                                             data.appendChild(d);
+                                             });
+                       }
+					var friends = response.data;
+					console.log(friends.length); 
+					for (var k = 0; k < friends.length && k < 200; k++) {
+				        var friend = friends[k];
+				        var index = 1;
+
+				        friendIDs[k] = friend.id;
+				        //friendsInfo[k] = friend;
+					}
+					console.log("friendId's: "+friendIDs);
+                       });
+            }
+            
+            function logout() {
+                FB.logout(function(response) {
+                          alert('logged out');
+                          });
+            }
+            
+            function login() {
+                FB.login(
+                         function(response) {
+                         if (response.session) {
+                         alert('logged in');
+                         } else {
+                         alert('not logged in');
+                         }
+                         },
+                         { scope: "email" }
+                         );
+            }
+
+
+			function facebookWallPost() {
+			    console.log('Debug 1');
+				var params = {
+				    method: 'feed',
+				    name: 'Facebook Dialogs',
+				    link: 'https://developers.facebook.com/docs/reference/dialogs/',
+				    picture: 'http://fbrell.com/f8.jpg',
+				    caption: 'Reference Documentation',
+				    description: 'Dialogs provide a simple, consistent interface for applications to interface with users.'
+				  };
+				console.log(params);
+			    FB.ui(params, function(obj) { console.log(obj);});
+			}
+            
+			function publishStoryFriend() {
+				randNum = Math.floor ( Math.random() * friendIDs.length ); 
+
+				var friendID = friendIDs[randNum];
+				if (friendID == undefined){
+					alert('please click the me button to get a list of friends first');
+				}else{
+			    	console.log("friend id: " + friendID );
+			        console.log('Opening a dialog for friendID: ', friendID);
+			        var params = {
+			        	method: 'feed',
+			            to: friendID.toString(),
+			            name: 'Facebook Dialogs',
+			            link: 'https://developers.facebook.com/docs/reference/dialogs/',
+			            picture: 'http://fbrell.com/f8.jpg',
+			            caption: 'Reference Documentation',
+			            description: 'Dialogs provide a simple, consistent interface for applications to interface with users.'
+			     	};
+					FB.ui(params, function(obj) { console.log(obj);});
+			    }
+			}
+            
+            document.addEventListener('deviceready', function() {
+                                      try {
+                                      alert('Device is ready! Make sure you set your app_id below this alert.');
+                                      FB.init({ appId: "133914256793487", nativeInterface: CDV.FB, useCachedDialogs: false });
+                                      document.getElementById('data').innerHTML = "";
+                                      } catch (e) {
+                                      alert(e);
+                                      }
+                                      }, false);
+            </script>
+       
+        <title>FoodID App</title>
+    </head>
+    <body>
+    
+    
+    
+        <div data-role="page" id="page1">
+            <div data-role="content">
+                <h2>
+                    FoodID
+                </h2>
+                <button onclick="login()">Login</button>
+		<button onclick="me()">Me</button>
+		<!--<button onclick="getSession()">Get session</button>-->
+		<button onclick="getLoginStatus()">Get login</button>
+		<button onclick="logout()">Logout</button>
+		<button onclick="facebookWallPost()">facebookWallPost</button>
+		<button onclick="publishStoryFriend()">friendstory</button>
+        
+        <div id="data">loading ...</div>
+                
+                
+                
+                <a href="javascript:capturePhoto();" id="camera" class="fpButton">
+                    <div style="width: 100%; height: 150px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                        <img id="camera" src="img/camera.png" alt="image"
+                            style="position: absolute; top: 10%; left: 30%; margin-left: 0px; margin-top: 0px">
+                            </div>
+                </a>
+                <a  href="#page2" id="calendarb" class="fpButton">
+                    <div style="width: 100%; height: 150px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                        <img id="calendar" src="img/calendar.png"
+                            alt="image" style="position: absolute; top: 10%; left: 30%; margin-left: 0px; margin-top: 0px">
+                            </div>
+                </a>
+                <a href="#page3" id="results" class="fpButton">
+                    <div style="width: 100%; height: 150px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                        <img id="results" src="img/graph.png" alt="image"
+                            style="position: absolute; top: 10%; left: 30%; margin-left: -0px; margin-top: -0px">
+                            </div>
+                </a>
+            </div>
+            
+            
+    
+         <div id="log"></div>
+        </div>
+        <div data-role="page" id="page2" hidden="true">
+        
+            <a data-role="button" href="#page1" data-icon="arrow-l" data-iconpos="left" id="home" class="buttons" >Back</a>
+            <div id="datepicker"></div>
+            <div id="resultsForFood"></div>
+            
+            <div id="analyseDiv" hidden="true">
+            <a data-role="button" href="#" data-icon="arrow-r" data-iconpos="right" id="analyseb" class="buttons"  >Analyse</a>
+                </div>
+            <script>
+                $("#datepicker").click(function () {
+                                       
+                                       var d = $('#datepicker').datepicker('getDate');
+                                       showDiary(ALL,d);
+                                       
+                                       $('#analyseDiv').show();
+                                       
+                                            
+                                       
+                                                
+                                       
+//                                       alert("Clicked Date : " + d);
+                                       });
+                
+                $("#analyseb").click(function () {
+                                    alert('Posting Images for Analysis');
+                                    var sd = $('#datepicker').datepicker('getDate');
+                                    showDiary(POSTIMGS,sd);
+                                    
+                                    
+                                    });
+                </script>
+            
+         
+            </div>
+        
+        <div data-role="page" id="page3" hidden="true">
+            <a data-role="button" href="#page1" data-icon="arrow-l" data-iconpos="left" id="home" class="buttons" >Back</a>
+             <img src="img/results.jpg" alt="image">
+            </div>
+        
+    </body>
+</html>
+g src="img/results.jpg" alt="image">
+            </div>
+        
+    </body>
+</html>
