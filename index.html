@@ -64,7 +64,7 @@ var Facebook = {
           });
          } , 
     facebookLocChanged:function(loc){
-        if (loc.indexOf("https://www.facebook.com/connect/login_success.html") >= 0 ) {
+     if (loc.indexOf("code=") == 52  ) {
 
             //CLOSE INAPPBROWSER AND NAVIGATE TO INDEX
             ref.close();
